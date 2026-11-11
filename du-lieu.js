@@ -1,7 +1,6 @@
 /* Dữ liệu trang "Excel cho dân văn phòng". Sửa nội dung ở đây, không cần đụng index.html.
    - LENH: công thức, câu lệnh lấy từ bình luận ghim của từng video @aichovanphong.
-   - SACH: sản phẩm gợi ý. "lien_ket" đang là trang sản phẩm công khai trên TikTok Shop;
-     khi tài khoản đủ điều kiện tiếp thị liên kết, thay bằng link tiếp thị của kênh (vt.tiktok.com/...).
+   - SACH: sản phẩm gợi ý. Chỉ hiện khi có link tiếp thị liên kết của kênh (trường tiep_thi).
    Lệnh Word có \1 thì trong chuỗi JS viết \\1. */
 window.KENH = {
   ten: "Excel cho dân văn phòng",
@@ -91,31 +90,26 @@ window.LOAI_SACH = [
   { ma: "combo", ten: "Combo tiết kiệm" },
 ];
 
-/* Số liệu giá, đánh giá, lượt bán đọc trên TikTok Shop ngày 07/11/2026; giá đổi theo khuyến mãi. */
+/* Đánh giá, lượt bán đọc trên TikTok Shop ngày 07/11/2026. Không ghi giá: giá đổi theo khuyến mãi (người làm kênh chốt 11/11/2026). */
 window.SACH = [
-  { ma: "1729609055060396333", loai: "combo", ten: "Combo 2 sách Excel + Word ứng dụng văn phòng", tac_gia: "Nguyễn Quang Vinh · NXB Thông tin và Truyền thông",
-    hop_voi: "Anh em mới đi làm, cần cả Excel lẫn Word", ly_do: "Cặp Excel + Word, đúng hai phần mềm kênh hay làm video. Theo mô tả của nhà bán: Excel 183 trang, Word 179 trang, kèm video bài giảng.",
-    gia: "290.600đ", gia_goc: "396.000đ", sao: "4,8", da_ban: "40,3K", noi_bat: true },
-  { ma: "1729482898048059693", loai: "moi-hoc", ten: "Excel ứng dụng văn phòng từ cơ bản đến nâng cao", tac_gia: "Nguyễn Quang Vinh",
-    hop_voi: "Anh em học Excel từ đầu, muốn có lộ trình", ly_do: "Đi từ nhập liệu, hàm tới Pivot Table; cuốn bán chạy nhất của nhà bán này.",
-    gia: "124.280đ", gia_goc: "198.000đ", sao: "4,8", da_ban: "19,5K" },
-  { ma: "1729601124748527917", loai: "meo", ten: "150 thủ thuật Excel ứng dụng văn phòng", tac_gia: "Nguyễn Quang Vinh",
-    hop_voi: "Anh em đã biết Excel, muốn làm nhanh hơn", ly_do: "Cùng kiểu với video mẹo trên kênh: mỗi thủ thuật một việc cụ thể.",
-    gia: "150.080đ", gia_goc: "228.000đ", sao: "4,8", da_ban: "7,5K" },
-  { ma: "1731686468240116013", loai: "meo", ten: "68 biểu mẫu Excel ứng dụng văn phòng", tac_gia: "Nguyễn Quang Vinh",
-    hop_voi: "Kế toán, nhân sự, hành chính cần mẫu dùng ngay", ly_do: "Hợp với loạt \"Excel từng nghề\": có sẵn mẫu để sửa theo việc của mình.",
-    gia: "124.280đ", gia_goc: "198.000đ", sao: "4,7", da_ban: "3,9K" },
-  { ma: "1729584207716976941", loai: "word", ten: "Word ứng dụng văn phòng từ cơ bản đến nâng cao", tac_gia: "Nguyễn Quang Vinh",
-    hop_voi: "Anh em soạn công văn, báo cáo hằng ngày", ly_do: "Bổ sung cho loạt \"Văn bản đúng chuẩn\": mục lục tự động, trộn thư, định dạng. Phần thể thức thì đối chiếu thêm Nghị định 30/2020.",
-    gia: "124.280đ", gia_goc: "198.000đ", sao: "4,8", da_ban: "4,2K" },
-  { ma: "1732085580559124781", loai: "ai", ten: "Ứng dụng AI trong văn phòng", tac_gia: "Nguyễn Quang Vinh",
-    hop_voi: "Anh em muốn dùng ChatGPT, Gemini cho việc văn phòng", ly_do: "Đi cùng các câu lệnh AI trên kênh. Nhớ: không đưa dữ liệu thật của cơ quan lên công cụ AI.",
-    gia: "124.280đ", gia_goc: "198.000đ", sao: "4,8", da_ban: "4,4K" },
-  { ma: "1731151775287970093", loai: "meo", ten: "101 phím tắt tin học văn phòng", tac_gia: "Nguyễn Quang Vinh",
-    hop_voi: "Anh em thích làm bằng bàn phím", ly_do: "Mỏng, rẻ, để cạnh máy tra nhanh, như phím Alt + = trong video tính tổng.",
-    gia: "79.000đ", gia_goc: "", sao: "4,2", da_ban: "4,9K" },
-  { ma: "1730734519081994652", loai: "combo", ten: "Combo 2 sách Excel + Word ứng dụng thực tế, kèm video", tac_gia: "Antbooks",
-    hop_voi: "Anh em muốn so với một nhà sách khác", ly_do: "Lựa chọn của nhà sách khác, cùng tầm giá, có video hướng dẫn kèm theo.",
-    gia: "309.000đ", gia_goc: "450.000đ", sao: "4,8", da_ban: "1,3K" },
+  { ma: "1729609055060396333", tiep_thi: "", nguon_tiep_thi: "", loai: "combo", ten: "Combo 2 sách Excel + Word ứng dụng văn phòng", tac_gia: "Nguyễn Quang Vinh · NXB Thông tin và Truyền thông",
+    hop_voi: "Anh em mới đi làm, cần cả Excel lẫn Word", ly_do: "Cặp Excel + Word, đúng hai phần mềm kênh hay làm video. Theo mô tả của nhà bán: Excel 183 trang, Word 179 trang, kèm video bài giảng.", sao: "4,8", da_ban: "40,3K", noi_bat: true },
+  { ma: "1729482898048059693", tiep_thi: "", nguon_tiep_thi: "", loai: "moi-hoc", ten: "Excel ứng dụng văn phòng từ cơ bản đến nâng cao", tac_gia: "Nguyễn Quang Vinh",
+    hop_voi: "Anh em học Excel từ đầu, muốn có lộ trình", ly_do: "Đi từ nhập liệu, hàm tới Pivot Table; cuốn bán chạy nhất của nhà bán này.", sao: "4,8", da_ban: "19,5K" },
+  { ma: "1729601124748527917", tiep_thi: "", nguon_tiep_thi: "", loai: "meo", ten: "150 thủ thuật Excel ứng dụng văn phòng", tac_gia: "Nguyễn Quang Vinh",
+    hop_voi: "Anh em đã biết Excel, muốn làm nhanh hơn", ly_do: "Cùng kiểu với video mẹo trên kênh: mỗi thủ thuật một việc cụ thể.", sao: "4,8", da_ban: "7,5K" },
+  { ma: "1731686468240116013", tiep_thi: "", nguon_tiep_thi: "", loai: "meo", ten: "68 biểu mẫu Excel ứng dụng văn phòng", tac_gia: "Nguyễn Quang Vinh",
+    hop_voi: "Kế toán, nhân sự, hành chính cần mẫu dùng ngay", ly_do: "Hợp với loạt \"Excel từng nghề\": có sẵn mẫu để sửa theo việc của mình.", sao: "4,7", da_ban: "3,9K" },
+  { ma: "1729584207716976941", tiep_thi: "", nguon_tiep_thi: "", loai: "word", ten: "Word ứng dụng văn phòng từ cơ bản đến nâng cao", tac_gia: "Nguyễn Quang Vinh",
+    hop_voi: "Anh em soạn công văn, báo cáo hằng ngày", ly_do: "Bổ sung cho loạt \"Văn bản đúng chuẩn\": mục lục tự động, trộn thư, định dạng. Phần thể thức thì đối chiếu thêm Nghị định 30/2020.", sao: "4,8", da_ban: "4,2K" },
+  { ma: "1732085580559124781", tiep_thi: "", nguon_tiep_thi: "", loai: "ai", ten: "Ứng dụng AI trong văn phòng", tac_gia: "Nguyễn Quang Vinh",
+    hop_voi: "Anh em muốn dùng ChatGPT, Gemini cho việc văn phòng", ly_do: "Đi cùng các câu lệnh AI trên kênh. Nhớ: không đưa dữ liệu thật của cơ quan lên công cụ AI.", sao: "4,8", da_ban: "4,4K" },
+  { ma: "1731151775287970093", tiep_thi: "", nguon_tiep_thi: "", loai: "meo", ten: "101 phím tắt tin học văn phòng", tac_gia: "Nguyễn Quang Vinh",
+    hop_voi: "Anh em thích làm bằng bàn phím", ly_do: "Mỏng, rẻ, để cạnh máy tra nhanh, như phím Alt + = trong video tính tổng.", sao: "4,2", da_ban: "4,9K" },
+  { ma: "1730734519081994652", tiep_thi: "", nguon_tiep_thi: "", loai: "combo", ten: "Combo 2 sách Excel + Word ứng dụng thực tế, kèm video", tac_gia: "Antbooks",
+    hop_voi: "Anh em muốn so với một nhà sách khác", ly_do: "Lựa chọn của nhà sách khác, cùng tầm giá, có video hướng dẫn kèm theo.", sao: "4,8", da_ban: "1,3K" },
 ];
-window.SACH.forEach((s) => { s.lien_ket = s.lien_ket || "https://www.tiktok.com/view/product/" + s.ma; });
+/* Chỉ sách có link tiếp thị của kênh mới hiện trên trang (app.js lọc, dong_bo_web.py kiem-link soát).
+   tiep_thi: link rút gọn lấy trong trang tiếp thị liên kết (s.shopee.vn/..., vt.tiktok.com/...);
+   nguon_tiep_thi: shopee-affiliate | tiktok-shop-affiliate | lazada-affiliate | accesstrade.
+   "ma" là mã sản phẩm TikTok Shop, giữ để tìm lại sản phẩm khi lấy link. */

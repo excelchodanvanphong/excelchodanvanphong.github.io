@@ -139,3 +139,15 @@ h2 { font-size: clamp(24px, 3.4vw, 34px); margin: 6px 0 4px; letter-spacing: -.0
 .toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); background: var(--chu); color: var(--nen); padding: 10px 16px; border-radius: 10px; font-weight: 700; font-size: 14px; opacity: 0; transition: opacity .2s; pointer-events: none; }
 .toast.hien { opacity: 1; }
 :focus-visible { outline: 3px solid var(--vang); outline-offset: 2px; }
+
+/* Trang bài học (dong_bo_web.py sinh) */
+.khung.hep { width: min(760px, 100% - 32px); }
+.bai h2 { font-size: 22px; margin: 28px 0 10px; }
+.h1-bai { font-size: clamp(26px, 4.4vw, 40px); }
+.bai .dan { font-size: 17px; color: var(--chu-phu); }
+.bai .ve { display: inline-block; margin-bottom: 14px; font-weight: 600; text-decoration: none; }
+.loi-video { padding-left: 22px; margin: 0; }
+.loi-video li { margin: 6px 0; }
+.bai-nut { margin-top: 24px; }
+.the h3 a { color: inherit; text-decoration: none; }
+.the h3 a:hover { color: var(--xanh); }

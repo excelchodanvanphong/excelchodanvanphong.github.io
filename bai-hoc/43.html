@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kế toán cộng chi phí theo phòng bằng SUMIF · Excel cho dân văn phòng</title>
+  <meta name="description" content="Cộng chi phí theo phòng ban trong Excel bằng SUMIF, kéo một lần ra 10 phòng. Excel cho từng nghề, phần 1: kế toán. Lưu lại cho kỳ quyết toán nha anh em.">
+  <link rel="canonical" href="https://excelchodanvanphong.github.io/bai-hoc/43.html">
+  <meta property="og:title" content="Kế toán cộng chi phí theo phòng bằng SUMIF · Excel cho dân văn phòng">
+  <meta property="og:description" content="Cộng chi phí theo phòng ban trong Excel bằng SUMIF, kéo một lần ra 10 phòng. Excel cho từng nghề, phần 1: kế toán. Lưu lại cho kỳ quyết toán nha anh em.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23107c41'/%3E%3Ctext x='32' y='45' font-size='38' font-family='Arial' font-weight='900' fill='white' text-anchor='middle'%3EX%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="dau">
+    <div class="khung">
+      <a class="logo" href="../"><span class="logo-o">X</span><span>Excel cho dân văn phòng</span></a>
+      <nav class="menu" aria-label="Mục chính">
+        <a class="giu" href="../bai-hoc.html">Bài học</a>
+        <a href="../#cong-thuc">Công thức</a>
+        <a href="../#van-ban">Văn bản đúng chuẩn</a>
+        <a href="../sach.html">Sách</a>
+        <a class="nut-tiktok" href="https://www.tiktok.com/@aichovanphong" target="_blank" rel="noopener">TikTok ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <article class="muc bai"><div class="khung hep">
+      <a class="ve" href="../bai-hoc.html">← Tất cả bài học</a>
+      <span class="nhan">Bài học ngày 05/11/2026</span>
+      <h1 class="h1-bai">Kế toán cộng chi phí theo phòng bằng SUMIF</h1>
+      <p class="dan">Cộng chi phí theo phòng ban trong Excel bằng SUMIF, kéo một lần ra 10 phòng. Excel cho từng nghề, phần 1: kế toán. Lưu lại cho kỳ quyết toán nha anh em.</p>
+      <h2>Nội dung video</h2>
+      <ol class="loi-video">
+        <li>Kế toán cuối tháng cộng chi phí 10 phòng, đừng lọc từng phòng rồi cộng tay nữa anh em!</li>
+        <li>Cộng có điều kiện, hàm SUMIF: vùng tên phòng, phòng cần cộng, vùng số tiền. Kéo xuống là xong 10 phòng!</li>
+        <li>Giờ cộng 10 phòng lại, so với tổng cột số tiền.</li>
+        <li>Ủa, lệch 1.850.000! Có một dòng gõ Kế toán dư dấu cách ở cuối, SUMIF bỏ sót luôn.</li>
+        <li>Còn gõ hoa hay thường thì không sao, vẫn cộng. Cắt khoảng trắng thừa bằng TRIM là khớp liền!</li>
+      </ol>
+      <h2>Căn cứ, công thức</h2>
+      <div class="khoi-lenh"><pre>=SUMIF(cột phòng, ô tên phòng, cột số tiền), khoá vùng bằng $ rồi kéo xuống. Máy để vùng Việt Nam thì thay dấu phẩy bằng dấu chấm phẩy. Tổng lệch thì kiểm dấu cách thừa: cắt bằng TRIM. Hoa thường không ảnh hưởng.</pre><button class="nut-copy" type="button">Copy</button></div>
+      <div class="hang-nut bai-nut">
+        <a class="nut chinh" href="https://www.tiktok.com/@aichovanphong/video/7704664498296261908" target="_blank" rel="noopener">▶ Xem video trên TikTok</a>
+        <a class="nut phu" href="../tep/43-sumif-chi-phi-theo-phong.xlsx" download>⬇ Tải file thực hành</a>
+      </div>
+    </div></article>
+  </main>
+  <footer class="chan">
+    <div class="khung">
+      <p><b>Excel cho dân văn phòng</b> · kênh TikTok <a href="https://www.tiktok.com/@aichovanphong" target="_blank" rel="noopener">@aichovanphong</a></p>
+      <p>Trang là tài liệu tham khảo của một kênh cá nhân; khi soạn văn bản chính thức, anh em đối chiếu văn bản gốc còn hiệu lực. Dữ liệu trong video và file thực hành đều là giả lập.</p>
+    </div>
+  </footer>
+  <script>
+  document.querySelectorAll(".nut-copy").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var t = b.previousElementSibling.textContent;
+      (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).catch(function () {
+        var a = document.createElement("textarea"); a.value = t; document.body.append(a); a.select(); document.execCommand("copy"); a.remove();
+      }).finally(function () { b.textContent = "Đã copy"; setTimeout(function () { b.textContent = "Copy"; }, 1500); });
+    });
+  });
+  </script>
+</body>
+</html>

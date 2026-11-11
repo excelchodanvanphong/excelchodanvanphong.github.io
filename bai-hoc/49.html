@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ngày tháng ban hành thiếu số 0 theo NĐ 30, sửa bằng Replace wildcard · Excel cho dân văn phòng</title>
+  <meta name="description" content="Đừng viết &quot;ngày 9 tháng 11&quot; nữa! Văn bản hành chính theo Nghị định 30/2020/NĐ-CP: ngày nhỏ hơn 10 và tháng 1, 2 phải thêm số 0 phía trước. Sửa cả văn bản b">
+  <link rel="canonical" href="https://excelchodanvanphong.github.io/bai-hoc/49.html">
+  <meta property="og:title" content="Ngày tháng ban hành thiếu số 0 theo NĐ 30, sửa bằng Replace wildcard · Excel cho dân văn phòng">
+  <meta property="og:description" content="Đừng viết &quot;ngày 9 tháng 11&quot; nữa! Văn bản hành chính theo Nghị định 30/2020/NĐ-CP: ngày nhỏ hơn 10 và tháng 1, 2 phải thêm số 0 phía trước. Sửa cả văn bản b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23107c41'/%3E%3Ctext x='32' y='45' font-size='38' font-family='Arial' font-weight='900' fill='white' text-anchor='middle'%3EX%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="dau">
+    <div class="khung">
+      <a class="logo" href="../"><span class="logo-o">X</span><span>Excel cho dân văn phòng</span></a>
+      <nav class="menu" aria-label="Mục chính">
+        <a class="giu" href="../bai-hoc.html">Bài học</a>
+        <a href="../#cong-thuc">Công thức</a>
+        <a href="../#van-ban">Văn bản đúng chuẩn</a>
+        <a href="../sach.html">Sách</a>
+        <a class="nut-tiktok" href="https://www.tiktok.com/@aichovanphong" target="_blank" rel="noopener">TikTok ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <article class="muc bai"><div class="khung hep">
+      <a class="ve" href="../bai-hoc.html">← Tất cả bài học</a>
+      <span class="nhan">Bài học ngày 09/11/2026</span>
+      <h1 class="h1-bai">Ngày tháng ban hành thiếu số 0 theo NĐ 30, sửa bằng Replace wildcard</h1>
+      <p class="dan">Đừng viết &quot;ngày 9 tháng 11&quot; nữa! Văn bản hành chính theo Nghị định 30/2020/NĐ-CP: ngày nhỏ hơn 10 và tháng 1, 2 phải thêm số 0 phía trước. Sửa cả văn bản bằng 1 lần Replace All. Văn bản đúng chuẩn, phần 4.</p>
+      <h2>Nội dung video</h2>
+      <ol class="loi-video">
+        <li>Đừng viết ngày 9 tháng 11 trên văn bản nữa anh em, thiếu số 0 là sai thể thức!</li>
+        <li>Nghị định 30 ghi rõ: ngày nhỏ hơn 10 và tháng 1, 2 phải thêm số 0 phía trước.</li>
+        <li>Vậy là ngày 09 tháng 11, còn tháng giêng phải ghi tháng 01.</li>
+        <li>Khoan! Tháng 3 trở đi không phải thêm số 0, chính Nghị định ghi ngày 05 tháng 3.</li>
+        <li>Văn bản cũ cả chục chỗ thì khỏi sửa tay: bấm Ctrl H, tick Use wildcards.</li>
+        <li>Gõ lệnh như trên hình, Replace All, bốn chỗ sửa một lần, ngày 15 vẫn nằm yên!</li>
+      </ol>
+      <h2>Căn cứ, công thức</h2>
+      <div class="khoi-lenh"><pre>Ctrl+H → More → tick Use wildcards.
+Lệnh 1 (ngày): tìm  ngày ([1-9]) tháng  thay bằng  ngày 0\1 tháng  → Replace All.
+Lệnh 2 (tháng 1, 2): tìm  tháng ([12]) năm  thay bằng  tháng 0\1 năm  → Replace All.
+Lệnh không đụng ngày 10–31, tháng 3–12. Lệnh phân biệt chữ hoa: chỗ nào viết &quot;Ngày&quot; hoa đầu câu thì chạy thêm lệnh tìm  Ngày ([1-9]) tháng  thay  Ngày 0\1 tháng.
+Căn cứ: điểm b mục 4 Phần II, Phần I, Phụ lục I Nghị định 30/2020/NĐ-CP.</pre><button class="nut-copy" type="button">Copy</button></div>
+      <div class="hang-nut bai-nut">
+        <a class="nut chinh" href="https://www.tiktok.com/@aichovanphong/video/7706025517534809365" target="_blank" rel="noopener">▶ Xem video trên TikTok</a>
+        <a class="nut phu" href="../tep/49-ngay-thang-dung-nd30.docx" download>⬇ Tải file thực hành</a>
+      </div>
+    </div></article>
+  </main>
+  <footer class="chan">
+    <div class="khung">
+      <p><b>Excel cho dân văn phòng</b> · kênh TikTok <a href="https://www.tiktok.com/@aichovanphong" target="_blank" rel="noopener">@aichovanphong</a></p>
+      <p>Trang là tài liệu tham khảo của một kênh cá nhân; khi soạn văn bản chính thức, anh em đối chiếu văn bản gốc còn hiệu lực. Dữ liệu trong video và file thực hành đều là giả lập.</p>
+    </div>
+  </footer>
+  <script>
+  document.querySelectorAll(".nut-copy").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var t = b.previousElementSibling.textContent;
+      (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).catch(function () {
+        var a = document.createElement("textarea"); a.value = t; document.body.append(a); a.select(); document.execCommand("copy"); a.remove();
+      }).finally(function () { b.textContent = "Đã copy"; setTimeout(function () { b.textContent = "Copy"; }, 1500); });
+    });
+  });
+  </script>
+</body>
+</html>
