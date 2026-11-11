@@ -13,12 +13,12 @@
     }).finally(function () { nut.textContent = xong; });
   }
 
-  var HUONG_DAN = 'Bấm <b>⋯</b> góc trên bên phải → <b>Mở trong trình duyệt</b>, rồi bấm lại.';
+  var HUONG_DAN = 'Bấm <b>⋯</b> góc trên bên phải → <b>Mở trong trình duyệt</b>.';
 
   function dai() {
     var d = document.createElement("div");
     d.className = "dai-tiktok";
-    d.innerHTML = '<b>Đang xem trong TikTok:</b> copy công thức được, nhưng TikTok không cho mở link, tải file. ' + HUONG_DAN +
+    d.innerHTML = 'Link không mở được hoặc không tải được file? ' + HUONG_DAN +
       ' <button type="button">Chép link trang</button>';
     d.querySelector("button").addEventListener("click", function (e) { chep(location.href, e.currentTarget, "Đã chép, dán vào Safari/Chrome"); });
     document.body.prepend(d);
@@ -42,14 +42,8 @@
     bang.hidden = false;
   }
 
-  document.addEventListener("click", function (e) {
-    var a = e.target.closest && e.target.closest("a[href]");
-    if (!a) return;
-    var h = a.getAttribute("href");
-    if (!h || h.charAt(0) === "#") return;
-    e.preventDefault();
-    moBang(a.href);
-  }, true);
+  /* 11/11/2026: link tiểu sử chuyển sang beacons.ai/aichovanphong, đi qua Beacons thì link mở được, nên không chặn cú bấm nữa.
+     moBang() giữ lại nếu sau này cần bật lại. */
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", dai); else dai();
 })();
