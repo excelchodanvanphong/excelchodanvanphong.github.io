@@ -116,11 +116,6 @@
     ve();
   }
 
-  /* Trong trình duyệt nhúng của TikTok: bỏ target của link tiktok.com cho cú bấm giống link thường (V2), không chuyển trang bằng JS vì TikTok chặn (thử 11/11/2026: V1/V2 chạy, gọi snssdk/intent không chạy) */
-  if (/musical_ly|BytedanceWebview|TikTok|trill/i.test(navigator.userAgent)) {
-    var boTab = function () { document.querySelectorAll('a[href*="tiktok.com"][target]').forEach(function (a) { a.removeAttribute("target"); }); };
-    boTab(); new MutationObserver(boTab).observe(document.documentElement, { childList: true, subtree: true });
-  }
 
   /* Nút lên đầu */
   const len = el("button", { class: "len-dau", type: "button", "aria-label": "Lên đầu trang", onclick: () => scrollTo({ top: 0 }) }, "↑");
