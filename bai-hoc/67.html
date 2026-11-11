@@ -57,12 +57,10 @@
     </div>
   </footer>
   <script>
-  /* Trong trình duyệt nhúng của TikTok: link tiktok.com mở cùng tab để iPhone chuyển sang app (thử 11/11/2026: V1/V2 chạy, gọi snssdk/intent không chạy) */
+  /* Trong trình duyệt nhúng của TikTok: bỏ target của link tiktok.com cho cú bấm giống link thường (V2), không chuyển trang bằng JS vì TikTok chặn (thử 11/11/2026: V1/V2 chạy, gọi snssdk/intent không chạy) */
   if (/musical_ly|BytedanceWebview|TikTok|trill/i.test(navigator.userAgent)) {
-    document.addEventListener("click", function (e) {
-      var a = e.target.closest && e.target.closest('a[href*="tiktok.com"]');
-      if (a && a.target === "_blank") { e.preventDefault(); location.href = a.href; }
-    });
+    var boTab = function () { document.querySelectorAll('a[href*="tiktok.com"][target]').forEach(function (a) { a.removeAttribute("target"); }); };
+    boTab(); new MutationObserver(boTab).observe(document.documentElement, { childList: true, subtree: true });
   }
   document.querySelectorAll(".nut-copy").forEach(function (b) {
     b.addEventListener("click", function () {
