@@ -11,7 +11,7 @@
       if (v == null || v === false) continue;
       if (k === "class") e.className = v; else if (k.startsWith("on")) e.addEventListener(k.slice(2), v); else e.setAttribute(k, v);
     }
-    con.flat().forEach((c) => c != null && e.append(c.nodeType ? c : document.createTextNode(c)));
+    con.flat(Infinity).forEach((c) => c != null && e.append(c.nodeType ? c : document.createTextNode(c)));
     return e;
   };
   const toast = (msg) => {
