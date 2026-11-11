@@ -1,49 +1,43 @@
-/* Trình duyệt nhúng của TikTok không cho mở link nào từ trang (thử 11/11/2026 trên iPhone: link thường báo
-   "TikTok không thể trực tiếp mở trang này"; x-safari-https:// báo "không thể hoàn tất hành động"; snssdk, intent cũng không chạy).
-   Nên khi trang chạy trong TikTok: dải hướng dẫn cố định ở đầu trang, bấm link thì hiện bảng hướng dẫn
-   "⋯ → Mở trong trình duyệt" kèm nút chép đúng link vừa bấm. Nút Copy công thức vẫn dùng bình thường.
-   Ngoài TikTok không làm gì. */
+/* Trình duyệt nhúng của TikTok chặn mọi link bấm từ trang (thử 11/11/2026 trên iPhone: link thường, JS, x-safari-https,
+   snssdk, intent đều bị chặn). Người làm kênh chốt 11/11/2026: trong TikTok trang không có link nào.
+   - Phần tử .chi-trinh-duyet (nút TikTok, xem tất cả sách...) bị gỡ.
+   - Link trong trang (#muc) đổi thành cuộn bằng JS, không điều hướng.
+   - Link còn lại (logo, chân trang...) đổi thành chữ thường.
+   - Dòng nhắc nhỏ ở đầu trang: muốn xem video, tải file thì mở bằng trình duyệt.
+   app.js tự không sinh link video, tải file, sách khi ở trong TikTok. Ngoài TikTok không làm gì. */
 (function () {
-  var ua = navigator.userAgent;
-  if (!/musical_ly|BytedanceWebview|TikTok|trill/i.test(ua)) return;
+  if (!/musical_ly|BytedanceWebview|TikTok|trill/i.test(navigator.userAgent)) return;
+  document.documentElement.classList.add("trong-tiktok");
 
-  function chep(t, nut, xong) {
-    (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).catch(function () {
-      var x = document.createElement("textarea"); x.value = t; document.body.append(x); x.select(); document.execCommand("copy"); x.remove();
-    }).finally(function () { nut.textContent = xong; });
+  function goLink(goc) {
+    (goc || document).querySelectorAll(".chi-trinh-duyet").forEach(function (x) { x.remove(); });
+    (goc || document).querySelectorAll("a[href]").forEach(function (a) {
+      var h = a.getAttribute("href");
+      if (h && h.charAt(0) === "#" && h.length > 1) {
+        var nut = document.createElement("button");
+        nut.type = "button"; nut.className = a.className + " nut-cuon"; nut.innerHTML = a.innerHTML;
+        nut.addEventListener("click", function () { var d = document.querySelector(h); if (d) d.scrollIntoView({ behavior: "smooth", block: "start" }); });
+        a.replaceWith(nut);
+      } else {
+        var s = document.createElement("span");
+        s.className = a.className; s.innerHTML = a.innerHTML;
+        a.replaceWith(s);
+      }
+    });
   }
-
-  var HUONG_DAN = 'Bấm <b>⋯</b> góc trên bên phải → <b>Mở trong trình duyệt</b>.';
 
   function dai() {
     var d = document.createElement("div");
     d.className = "dai-tiktok";
-    d.innerHTML = 'Link không mở được hoặc không tải được file? ' + HUONG_DAN +
-      ' <button type="button">Chép link trang</button>';
-    d.querySelector("button").addEventListener("click", function (e) { chep(location.href, e.currentTarget, "Đã chép, dán vào Safari/Chrome"); });
+    d.innerHTML = 'Bấm tên bài, tên công thức để đọc ngay. Xem video, tải file mẫu: bấm <b>⋯</b> góc trên → <b>Mở trong trình duyệt</b>.';
     document.body.prepend(d);
   }
 
-  var bang;
-  function moBang(url) {
-    if (!bang) {
-      bang = document.createElement("div");
-      bang.className = "bang-tiktok";
-      bang.setAttribute("role", "dialog");
-      bang.innerHTML = '<div class="hop"><p><b>TikTok không cho mở link này.</b></p><p>' + HUONG_DAN +
-        '</p><p>Hoặc chép link dán vào Safari, Chrome:</p><div class="hang-nut"><button type="button" class="nut chinh" data-chep>Chép link</button>' +
-        '<button type="button" class="nut phu" data-dong>Đóng</button></div></div>';
-      bang.addEventListener("click", function (e) { if (e.target === bang || e.target.hasAttribute("data-dong")) bang.hidden = true; });
-      document.body.append(bang);
-    }
-    var nut = bang.querySelector("[data-chep]");
-    nut.textContent = "Chép link";
-    nut.onclick = function () { chep(url, nut, "Đã chép ✓"); };
-    bang.hidden = false;
+  function batDau() {
+    dai(); goLink();
+    new MutationObserver(function (ds) {
+      ds.forEach(function (m) { m.addedNodes.forEach(function (n) { if (n.nodeType === 1) goLink(n.parentNode || n); }); });
+    }).observe(document.body, { childList: true, subtree: true });
   }
-
-  /* 11/11/2026: link tiểu sử chuyển sang beacons.ai/aichovanphong, đi qua Beacons thì link mở được, nên không chặn cú bấm nữa.
-     moBang() giữ lại nếu sau này cần bật lại. */
-
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", dai); else dai();
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", batDau); else batDau();
 })();

@@ -159,3 +159,21 @@ h2 { font-size: clamp(24px, 3.4vw, 34px); margin: 6px 0 4px; letter-spacing: -.0
 .bang-tiktok[hidden] { display: none; }
 .bang-tiktok .hop { background: var(--giay); color: var(--chu); border-radius: var(--bo); padding: 18px; width: min(480px, 100%); box-shadow: var(--bong); }
 .bang-tiktok p { margin: 0 0 10px; }
+
+/* Danh sách xổ ra + phân trang (bài học, công thức; 11/11/2026) */
+.ds-xo { display: grid; gap: 10px; }
+.muc-xo { background: var(--giay); border: 1px solid var(--vien); border-radius: var(--bo); box-shadow: var(--bong); }
+.muc-xo summary { list-style: none; cursor: pointer; padding: 14px 44px 14px 16px; position: relative; display: flex; flex-direction: column; gap: 2px; }
+.muc-xo summary::-webkit-details-marker { display: none; }
+.muc-xo summary::after { content: "+"; position: absolute; right: 16px; top: 50%; transform: translateY(-50%); font-size: 22px; font-weight: 700; color: var(--xanh); }
+.muc-xo[open] summary::after { content: "−"; }
+.muc-xo summary .ngay { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--xanh); }
+.muc-xo summary .ten { font-weight: 700; font-size: 16px; line-height: 1.4; }
+.than-xo { padding: 0 16px 16px; display: flex; flex-direction: column; gap: 10px; border-top: 1px solid var(--vien); padding-top: 12px; }
+.than-xo h4 { margin: 6px 0 0; font-size: 15px; }
+.dan-xo { margin: 0; color: var(--chu-phu); }
+.nhac-tiktok { font-style: italic; }
+.phan-trang { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-top: 16px; }
+.trang-so { min-width: 44px; height: 44px; border-radius: 10px; border: 1px solid var(--vien); background: var(--giay); color: var(--chu); font: inherit; font-weight: 700; cursor: pointer; }
+.trang-so[aria-current="page"] { background: var(--xanh); border-color: var(--xanh); color: #fff; }
+.trong-tiktok .menu .nut-cuon { display: none; }
