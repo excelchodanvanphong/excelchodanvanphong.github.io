@@ -17,6 +17,10 @@ window.NHOM = [
 ];
 
 window.LENH = [
+  { ma: "58", nhom: "van-ban", ten: "Báo cáo gửi cấp trên phải có Kính gửi", loi: "Báo cáo, tờ trình gửi cấp trên bỏ dòng Kính gửi vì nghĩ chỉ công văn mới cần.",
+    lenh: "Gõ: Kính gửi:\nMỗi nơi nhận một dòng: - Giám đốc Công ty ABC;\nBôi các dòng gạch đầu dòng → Paragraph → Left: lùi thêm 1,75 cm (chữ 14)\nCuối mỗi dòng dấu chấm phẩy, dòng cuối dấu chấm",
+    ghi_chu: "Thông tư 01/2011/TT-BNV (Điều 14, hết hiệu lực) chỉ quy định Kính gửi cho công văn; Phụ lục I Nghị định 30/2020/NĐ-CP mục II.9 áp dụng cả tờ trình, báo cáo cấp dưới gửi cấp trên. Gạch đầu dòng thẳng hàng dưới dấu hai chấm; cỡ chữ khác 14 thì số lùi khác. Báo cáo gửi cấp dưới không thuộc trường hợp này.",
+    tep: "58-kinh-gui-bao-cao.docx", video: null, sap_co: true },
   { ma: "49", nhom: "van-ban", ten: "Ngày tháng ban hành thiếu số 0", loi: "Ghi \"ngày 9 tháng 11\", \"tháng 1\" trên văn bản.",
     lenh: "Ctrl + H → More → tick Use wildcards\nTìm:  ngày ([1-9]) tháng\nThay: ngày 0\\1 tháng\n\nTìm:  tháng ([12]) năm\nThay: tháng 0\\1 năm",
     ghi_chu: "Ngày nhỏ hơn 10 và tháng 1, 2 phải thêm số 0 (điểm b mục 4 Phần II, Phần I, Phụ lục I NĐ 30/2020/NĐ-CP). Tháng 3 trở đi không phải thêm. Lệnh phân biệt chữ hoa: chỗ nào viết \"Ngày\" hoa thì chạy thêm lệnh với chữ \"Ngày\".",
