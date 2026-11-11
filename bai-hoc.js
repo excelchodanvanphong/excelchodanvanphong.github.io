@@ -1,6 +1,20 @@
 /* Sinh tự động bằng dong_bo_web.py bai-hoc, không sửa tay. */
 window.BAI_HOC = [
  {
+  "ma": "67",
+  "ten": "Dòng ngày tháng nghiêng, canh theo Quốc hiệu, cùng dòng số ký hiệu",
+  "ngay": "2026-11-10",
+  "video": "7706526687093198100",
+  "tom_tat": "Dòng địa danh, ngày tháng phải in nghiêng, sau địa danh có dấu phẩy, cùng dòng với số ký hiệu, canh giữa theo Quốc hiệu và Tiêu ngữ (mục II.4 điểm c Phụ lục I Nghị định 30/2020/NĐ-CP). Nối tiếp video ngày tháng thiếu số 0."
+ },
+ {
+  "ma": "57",
+  "ten": "Căn cứ ban hành: dấu phẩy thành dấu chấm",
+  "ngay": "2026-11-10",
+  "video": "7706392682968485140",
+  "tom_tat": "Dòng căn cứ cuối: Thông tư 01/2011/TT-BNV kết bằng dấu phẩy, Nghị định 30/2020/NĐ-CP kết bằng dấu chấm và căn cứ in nghiêng."
+ },
+ {
   "ma": "56",
   "ten": "Thuế lương 2026: 5 bậc so với 7 bậc, công thức Excel một bảng mốc",
   "ngay": "2026-11-09",
@@ -20,6 +34,13 @@ window.BAI_HOC = [
   "ngay": "2026-11-08",
   "video": "7705636766585244948",
   "tom_tat": "Đừng để phụ lục đánh số trang tiếp theo công văn nữa! Văn bản hành chính theo Nghị định 30/2020/NĐ-CP: số trang của phụ lục đánh riêng theo từng phụ lục. 2 bước trên Word. Văn bản đúng chuẩn, phần 2."
+ },
+ {
+  "ma": "44",
+  "ten": "Nhân sự đếm ngày công COUNTIF, tính nửa công",
+  "ngay": "2026-11-07",
+  "video": "7705282553430674708",
+  "tom_tat": "Đếm ngày công trong bảng chấm công Excel bằng COUNTIF, tính cả nửa công. Excel cho từng nghề, phần 2: nhân sự. Lưu lại cho kỳ chấm công nha anh em."
  },
  {
   "ma": "46",
@@ -48,19 +69,5 @@ window.BAI_HOC = [
   "ngay": "2026-11-05",
   "video": "7704540942283394325",
   "tom_tat": "Số tài khoản bị Excel đổi số cuối thành 0, số điện thoại mất số 0 đầu: định dạng Text trước khi dán. Phần 3 loạt làm sạch dữ liệu Excel. Lưu lại trước kỳ lương nha anh em."
- },
- {
-  "ma": "47",
-  "ten": "Số trang Word đúng Nghị định 30: giữa lề trên, trang 1 không số",
-  "ngay": "2026-11-04",
-  "video": "7704296758381120788",
-  "tom_tat": "Đừng để số trang ở góc dưới bên phải nữa! Văn bản hành chính theo Nghị định 30/2020/NĐ-CP: số trang canh giữa ở lề trên, trang đầu không hiện số. 3 bước trên Word. Văn bản đúng chuẩn, phần 1."
- },
- {
-  "ma": "37",
-  "ten": "Ctrl + E tách họ tên không công thức",
-  "ngay": "2026-11-04",
-  "video": "7704163561630698772",
-  "tom_tat": "Cách tách họ và tên trong Excel không cần công thức: gõ mẫu 1 dòng, bấm Ctrl + E. Phần 2 loạt làm sạch dữ liệu Excel. Lưu lại xài liền nha anh em."
  }
 ];
