@@ -116,6 +116,14 @@
     ve();
   }
 
+  /* Trong trình duyệt nhúng của TikTok: link tiktok.com mở cùng tab để iPhone chuyển sang app (thử 11/11/2026: V1/V2 chạy, gọi snssdk/intent không chạy) */
+  if (/musical_ly|BytedanceWebview|TikTok|trill/i.test(navigator.userAgent)) {
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest('a[href*="tiktok.com"]');
+      if (a && a.target === "_blank") { e.preventDefault(); location.href = a.href; }
+    });
+  }
+
   /* Nút lên đầu */
   const len = el("button", { class: "len-dau", type: "button", "aria-label": "Lên đầu trang", onclick: () => scrollTo({ top: 0 }) }, "↑");
   document.body.append(len);
