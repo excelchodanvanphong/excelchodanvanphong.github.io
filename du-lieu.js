@@ -17,6 +17,22 @@ window.NHOM = [
 ];
 
 window.LENH = [
+  { ma: "65", nhom: "van-ban", ten: "Tên loại, trích yếu: cỡ 13 hay 14 đều đúng", loi: "Bắt buộc tên loại, trích yếu cỡ 14 theo Thông tư cũ.",
+    lenh: "Bôi chữ BÁO CÁO → tạo Style \"Tên loại\": Times New Roman 14, in hoa, đậm, canh giữa\nDòng trích yếu → Style \"Trích yếu\": cùng cỡ, in thường, đậm, canh giữa",
+    ghi_chu: "Tên loại, trích yếu cỡ 13 đến 14, chữ đứng, đậm; dưới trích yếu có đường kẻ nét liền dài 1/3 đến 1/2 dòng chữ (mục II.5 điểm b Phụ lục I NĐ 30/2020/NĐ-CP). Thông tư 01/2011/TT-BNV (Điều 10 khoản 2, hết hiệu lực) ghi cỡ 14. Trích yếu công văn sau V/v: cỡ 12 đến 13, chữ đứng.",
+    tep: "65-ten-loai-trich-yeu.docx", video: null, sap_co: true },
+  { ma: "64", nhom: "van-ban", ten: "Tổ công tác ban hành văn bản: hệ thống số riêng", loi: "Tổ công tác dùng chung dãy số với cơ quan, số nhảy 02, 04, 06.",
+    lenh: "=TEXT(COUNTIF($A$2:A2,A2),\"00\")&\"/\"&XLOOKUP(B2,$G$2:$G$4,$H$2:$H$4)&\"-\"&A2",
+    ghi_chu: "A: đơn vị ban hành (cơ quan, Tổ), B: loại văn bản, G:H bảng viết tắt. Hội đồng, Ban, Tổ được ghi là cơ quan ban hành và dùng con dấu, chữ ký số của cơ quan thì lấy hệ thống số riêng (mục II.3 điểm a Phụ lục I NĐ 30/2020/NĐ-CP); Thông tư 01/2011/TT-BNV (Điều 8 khoản 1) chỉ nêu Hội đồng, Ban tư vấn. Máy vùng Việt Nam đổi dấu phẩy thành chấm phẩy.",
+    tep: "64-so-rieng-to-cong-tac.xlsx", video: null, sap_co: true },
+  { ma: "63", nhom: "van-ban", ten: "Bảng Excel in kèm văn bản: chữ màu đen", loi: "In bảng kèm công văn còn chữ đỏ, chữ xanh, sửa màu từng ô.",
+    lenh: "Page Layout → bấm mũi tên góc Page Setup\nTab Sheet → tick Black and white → OK",
+    ghi_chu: "Phông chữ màu đen (mục I.4 Phụ lục I NĐ 30/2020/NĐ-CP); Thông tư 01/2011/TT-BNV (Điều 4) không ghi màu. Black and white chỉ đổi lúc in, màu trên máy vẫn giữ.",
+    tep: "63-in-bang-chu-den.xlsx", video: null, sap_co: true },
+  { ma: "50", nhom: "van-ban", ten: "Giấy giới thiệu, phiếu gửi: hết khổ A5", loi: "In giấy giới thiệu, phiếu gửi trên khổ A5 như Thông tư cũ.",
+    lenh: "Layout → Size → A4\nMargins → Custom Margins: Top 2, Bottom 2, Left 3, Right 2\nBấm Set As Default → Yes",
+    ghi_chu: "Phụ lục I NĐ 30/2020/NĐ-CP mục I.1 chỉ quy định khổ A4 (210 x 297 mm); Mẫu 1.8 Giấy giới thiệu (Phụ lục III) không ghi khổ riêng. Thông tư 01/2011/TT-BNV (Điều 5 khoản 1, hết hiệu lực) cho giấy giới thiệu, giấy biên nhận hồ sơ, phiếu gửi, phiếu chuyển in khổ A5.",
+    tep: "50-giay-gioi-thieu-a4.docx", video: null, sap_co: true },
   { ma: "66", nhom: "tung-nghe", ten: "Lương cơ sở 2.530.000: bảng mốc, công thức tự chọn mức", loi: "Sửa tay mức lương cơ sở trong từng công thức khi Nhà nước đổi mức.",
     lenh: "=ROUND(B2*XLOOKUP($E$1,$F$2:$F$3,$G$2:$G$3,,-1),0)",
     ghi_chu: "E1 là kỳ lương (ngày đầu tháng), cột F là ngày áp dụng, cột G là mức, B là hệ số. Mức 2.340.000 từ 01/7/2024 (khoản 2 Điều 3 NĐ 73/2024/NĐ-CP), 2.530.000 từ 01/7/2026 (khoản 2 Điều 3 NĐ 161/2026/NĐ-CP). Máy vùng Việt Nam đổi dấu phẩy thành chấm phẩy. Cần Excel 2021 hoặc Microsoft 365.",
