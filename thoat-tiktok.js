@@ -1,47 +1,55 @@
-/* Trình duyệt nhúng của TikTok chặn mở link ("TikTok không thể trực tiếp mở trang này", thử 11/11/2026 trên iPhone).
-   Khi trang chạy trong TikTok: mọi link đổi sang mở bằng trình duyệt của máy
-   (iPhone: x-safari-https:// → Safari, cần iOS 17+; Android: intent:// → trình duyệt mặc định),
-   kèm dải hướng dẫn "Mở bằng trình duyệt" và nút chép link làm dự phòng. Ngoài TikTok không làm gì. */
+/* Trình duyệt nhúng của TikTok không cho mở link nào từ trang (thử 11/11/2026 trên iPhone: link thường báo
+   "TikTok không thể trực tiếp mở trang này"; x-safari-https:// báo "không thể hoàn tất hành động"; snssdk, intent cũng không chạy).
+   Nên khi trang chạy trong TikTok: dải hướng dẫn cố định ở đầu trang, bấm link thì hiện bảng hướng dẫn
+   "⋯ → Mở trong trình duyệt" kèm nút chép đúng link vừa bấm. Nút Copy công thức vẫn dùng bình thường.
+   Ngoài TikTok không làm gì. */
 (function () {
   var ua = navigator.userAgent;
   if (!/musical_ly|BytedanceWebview|TikTok|trill/i.test(ua)) return;
-  var ios = /iPhone|iPad|iPod/i.test(ua), android = /Android/i.test(ua);
 
-  function raNgoai(url) {
-    var u = new URL(url, location.href);
-    if (!/^https?:$/.test(u.protocol)) return null;
-    if (ios) return "x-safari-" + u.href.replace(/^http:/, "https:");
-    if (android) return "intent://" + u.host + u.pathname + u.search + u.hash + "#Intent;scheme=https;S.browser_fallback_url=" + encodeURIComponent(u.href) + ";end";
-    return null;
+  function chep(t, nut, xong) {
+    (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).catch(function () {
+      var x = document.createElement("textarea"); x.value = t; document.body.append(x); x.select(); document.execCommand("copy"); x.remove();
+    }).finally(function () { nut.textContent = xong; });
   }
 
-  function doiLink() {
-    document.querySelectorAll("a[href]:not([data-ngoai])").forEach(function (a) {
-      var h = a.getAttribute("href");
-      if (!h || h.charAt(0) === "#") return;
-      var moi = raNgoai(a.href);
-      if (!moi) return;
-      a.setAttribute("data-ngoai", "1");
-      a.setAttribute("href", moi);
-      a.removeAttribute("target");
-      a.removeAttribute("download");
-    });
-  }
+  var HUONG_DAN = 'Bấm <b>⋯</b> góc trên bên phải → <b>Mở trong trình duyệt</b>, rồi bấm lại.';
 
   function dai() {
     var d = document.createElement("div");
     d.className = "dai-tiktok";
-    d.innerHTML = '<b>Đang mở trong TikTok.</b> Bấm <b>⋯</b> góc trên bên phải → <b>Mở trong trình duyệt</b> để dùng đủ link, tải file.' +
+    d.innerHTML = '<b>Đang xem trong TikTok:</b> copy công thức được, nhưng TikTok không cho mở link, tải file. ' + HUONG_DAN +
       ' <button type="button">Chép link trang</button>';
-    d.querySelector("button").addEventListener("click", function (e) {
-      var t = location.href, b = e.currentTarget;
-      (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).catch(function () {
-        var x = document.createElement("textarea"); x.value = t; document.body.append(x); x.select(); document.execCommand("copy"); x.remove();
-      }).finally(function () { b.textContent = "Đã chép, dán vào Safari/Chrome"; });
-    });
+    d.querySelector("button").addEventListener("click", function (e) { chep(location.href, e.currentTarget, "Đã chép, dán vào Safari/Chrome"); });
     document.body.prepend(d);
   }
 
-  function batDau() { dai(); doiLink(); new MutationObserver(doiLink).observe(document.body, { childList: true, subtree: true }); }
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", batDau); else batDau();
+  var bang;
+  function moBang(url) {
+    if (!bang) {
+      bang = document.createElement("div");
+      bang.className = "bang-tiktok";
+      bang.setAttribute("role", "dialog");
+      bang.innerHTML = '<div class="hop"><p><b>TikTok không cho mở link này.</b></p><p>' + HUONG_DAN +
+        '</p><p>Hoặc chép link dán vào Safari, Chrome:</p><div class="hang-nut"><button type="button" class="nut chinh" data-chep>Chép link</button>' +
+        '<button type="button" class="nut phu" data-dong>Đóng</button></div></div>';
+      bang.addEventListener("click", function (e) { if (e.target === bang || e.target.hasAttribute("data-dong")) bang.hidden = true; });
+      document.body.append(bang);
+    }
+    var nut = bang.querySelector("[data-chep]");
+    nut.textContent = "Chép link";
+    nut.onclick = function () { chep(url, nut, "Đã chép ✓"); };
+    bang.hidden = false;
+  }
+
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest("a[href]");
+    if (!a) return;
+    var h = a.getAttribute("href");
+    if (!h || h.charAt(0) === "#") return;
+    e.preventDefault();
+    moBang(a.href);
+  }, true);
+
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", dai); else dai();
 })();
