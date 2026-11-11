@@ -92,7 +92,7 @@
   }
   const MAU_TIEP_THI = {
     "shopee-affiliate": /^https:\/\/s\.shopee\.vn\/[A-Za-z0-9]+$/,
-    "tiktok-shop-affiliate": /^https:\/\/(vt|vm)\.tiktok\.com\/[A-Za-z0-9]+\/?$/,
+    "tiktok-shop-affiliate": /^https:\/\/(vt|vm)\.tiktok\.com\/[A-Za-z0-9_-]+\/?$/,
     "lazada-affiliate": /^https:\/\/s\.lazada\.vn\/s\.[A-Za-z0-9]+$/,
     "accesstrade": /^https:\/\/(go\.isclix\.com|shorten\.asia)\//,
   };
