@@ -1,6 +1,43 @@
 /* Sinh tự động bằng dong_bo_web.py bai-hoc, không sửa tay. */
 window.BAI_HOC = [
  {
+  "ma": "68",
+  "ten": "Địa danh ghi đủ Thành phố Hồ Chí Minh, AutoCorrect, dòng ngày rớt hai dòng",
+  "ngay": "2026-11-11",
+  "video": "7706770369138396436",
+  "tom_tat": "Đơn vị hành chính đặt theo tên người, bằng chữ số hoặc sự kiện lịch sử thì địa danh trên văn bản phải ghi tên gọi đầy đủ (mục II.4 điểm a Phụ lục I Nghị định 30/2020/NĐ-CP): Thành phố Hồ Chí Minh, không viết TP. HCM.",
+  "loi": [
+   "Đừng viết tắt TP. HCM ở dòng ngày tháng nữa anh em, phải ghi đủ tên!",
+   "Địa danh đặt theo tên người phải ghi tên gọi đầy đủ, từ 2011 chưa đổi.",
+   "Khoan! Chữ Thành phố ở đây viết hoa, thành phố khác viết thường.",
+   "Ghi đủ tên thì rớt hai dòng, nới cột phải lên 11 phân là vừa.",
+   "Vào AutoCorrect, gõ tắt tphcm, thay bằng tên đầy đủ.",
+   "Lần sau gõ tphcm, cách một cái là ra đủ tên."
+  ],
+  "ghim": "Căn cứ cũ: Điều 9 khoản 1 điểm a Thông tư 01/2011/TT-BNV (hết hiệu lực 15/6/2020). Căn cứ hiện hành: mục II.4 điểm a Phần I Phụ lục I; viết hoa đặc biệt \"Thành phố Hồ Chí Minh\" tại mục III.1 điểm c Phụ lục II Nghị định 30/2020/NĐ-CP.\nWord: File > Options > Proofing > AutoCorrect Options, Replace: tphcm, With: Thành phố Hồ Chí Minh > Add. Bảng tiêu đề thử trên Word 2021: cột phải 10,5 cm cỡ 14 rớt hai dòng, 11 cm vừa một dòng.",
+  "tep": null
+ },
+ {
+  "ma": "58",
+  "ten": "Báo cáo gửi cấp trên phải có Kính gửi",
+  "ngay": "2026-11-11",
+  "video": "7706891328499633429",
+  "tom_tat": "Báo cáo, tờ trình gửi cấp trên phải có Kính gửi theo Nghị định 30/2020/NĐ-CP; Thông tư 01/2011/TT-BNV chỉ quy định dòng này cho công văn.",
+  "loi": [
+   "Soạn báo cáo gửi cấp trên mà thiếu dòng Kính gửi là sai thể thức đó anh em!",
+   "Thông tư cũ chỉ bắt công văn có Kính gửi. Nghị định 30 thêm tờ trình và báo cáo gửi cấp trên.",
+   "Căn cứ: Thông tư 01/2011 đã hết hiệu lực, nay là Phụ lục I Nghị định 30, phần Nơi nhận.",
+   "Lưu ý! Báo cáo gửi cấp dưới không thuộc trường hợp này.",
+   "Gửi nhiều nơi thì gạch đầu dòng phải thẳng hàng dưới dấu hai chấm.",
+   "Gõ Kính gửi, hai chấm, rồi mỗi nơi một dòng.",
+   "Bôi các dòng đó, chữ cỡ 14 thì lùi thêm 1,75 xen ti mét.",
+   "Cuối mỗi dòng chấm phẩy, dòng cuối dấu chấm.",
+   "Gửi lên cấp trên, nhớ có Kính gửi."
+  ],
+  "ghim": "Căn cứ cũ: Điều 14 Thông tư 01/2011/TT-BNV (hết hiệu lực 15/6/2020). Căn cứ hiện hành: mục II.9 điểm b và d Phần I Phụ lục I Nghị định 30/2020/NĐ-CP.\nCỡ chữ 14, Times New Roman: các dòng gạch đầu dòng lùi thêm 1,75 cm so với chữ Kính gửi. Cỡ chữ khác thì số lùi khác. Mẫu 1.4 không vẽ dòng này, nhưng mục II.9 điểm b quy định rõ.",
+  "tep": "58-kinh-gui-bao-cao.docx"
+ },
+ {
   "ma": "67",
   "ten": "Dòng ngày tháng nghiêng, canh theo Quốc hiệu, cùng dòng số ký hiệu",
   "ngay": "2026-11-10",
