@@ -1,6 +1,46 @@
 /* Sinh tự động bằng dong_bo_web.py bai-hoc, không sửa tay. */
 window.BAI_HOC = [
  {
+  "ma": "61",
+  "ten": "Tiêu đề Mục cỡ 12–13 lên 13–14",
+  "ngay": "2026-11-12",
+  "video": "7707263339608444180",
+  "tom_tat": "Văn bản bố cục theo chương, mục, điều: tiêu đề Mục từ cỡ 12–13 của Thông tư 01/2011/TT-BNV lên cỡ 13–14 theo Nghị định 30/2020/NĐ-CP.",
+  "loi": [
+   "Tiêu đề Mục cỡ 12: thời Thông tư cũ vẫn được, theo Nghị định 30 là thiếu cỡ!",
+   "Văn bản chia chương, mục, điều: cũ 12 đến 13, giờ 13 đến 14.",
+   "Căn cứ: Thông tư 01/2011 đã hết hiệu lực, nay là Phụ lục I Nghị định 30, phần nội dung văn bản.",
+   "Nhớ kỹ! Phần, Chương vẫn như cũ, chỉ Mục là dễ sót.",
+   "Gắn tiêu đề Mục vào một Style, đổi một chỗ, cả văn bản đổi theo.",
+   "Bôi tiêu đề Mục đầu tiên, tạo Style mới.",
+   "Các Mục còn lại bấm vào Style đó.",
+   "Chuột phải Style, Modify, chọn cỡ 14, ba Mục đổi cùng lúc.",
+   "Tiêu đề Mục: cỡ 13 đến 14."
+  ],
+  "ghim": "Căn cứ cũ: Điều 11 khoản 2 Thông tư 01/2011/TT-BNV (hết hiệu lực 15/6/2020). Căn cứ hiện hành: mục II.6 điểm đ Phần I Phụ lục I Nghị định 30/2020/NĐ-CP.\nQuy định cỡ 12–13 cũ áp cho tiêu đề Mục trong văn bản bố cục theo phần, chương, mục, điều.",
+  "tep": "61-tieu-de-muc-co-14.docx"
+ },
+ {
+  "ma": "59",
+  "ten": "Chữ trong văn bản màu đen, Times New Roman",
+  "ngay": "2026-11-12",
+  "video": "7707136172580998420",
+  "tom_tat": "Nghị định 30/2020/NĐ-CP ghi phông Times New Roman, màu đen; Thông tư 01/2011/TT-BNV chỉ ghi phông Unicode, không nói màu chữ.",
+  "loi": [
+   "Chữ xanh, chữ đỏ trong công văn: Thông tư cũ không ghi màu chữ, Nghị định 30 ghi màu đen!",
+   "Phông cũng chốt luôn: Điều 4 cũ chỉ ghi phông Unicode, giờ ghi rõ Times New Roman.",
+   "Căn cứ: Thông tư 01/2011 đã hết hiệu lực, nay là Phụ lục I Nghị định 30, phần phông chữ.",
+   "Bẫy ở đây! Bôi toàn bộ đổi màu, số trang trên đầu vẫn còn xanh!",
+   "Bôi hai lần là sạch: thân văn bản một lần, đầu trang một lần.",
+   "Ctrl A, Font Color, chọn Automatic.",
+   "Bấm đúp đầu trang, Ctrl A, chọn Automatic lần nữa.",
+   "Liên kết xanh, số đỏ, số trang xanh, đen hết.",
+   "Văn bản hành chính: chữ đen, Times New Roman."
+  ],
+  "ghim": "Căn cứ cũ: Điều 4 Thông tư 01/2011/TT-BNV (hết hiệu lực 15/6/2020). Căn cứ hiện hành: mục I.4 Phần I Phụ lục I Nghị định 30/2020/NĐ-CP.\nQuy định màu đen này là của phông chữ. Hình chữ ký số, hình dấu có quy định màu riêng tại mục II.7, II.8.",
+  "tep": "59-chu-mau-den.docx"
+ },
+ {
   "ma": "68",
   "ten": "Địa danh ghi đủ Thành phố Hồ Chí Minh, AutoCorrect, dòng ngày rớt hai dòng",
   "ngay": "2026-11-11",
@@ -141,69 +181,5 @@ window.BAI_HOC = [
   ],
   "ghim": "=COUNTIF(dòng chấm công,\"x\")+COUNTIF(dòng chấm công,\"n\")*0,5 (máy vùng Việt Nam: dấu chấm phẩy thay dấu phẩy). Đếm phép: =COUNTIF(dòng,\"P\"). Thiếu công thì kiểm ô có dấu cách thừa: Ctrl + H thay \"x \" bằng \"x\", tích \"Match entire cell contents\".",
   "tep": null
- },
- {
-  "ma": "46",
-  "ten": "Số thứ tự không nhảy khi lọc: SUBTOTAL(3)",
-  "ngay": "2026-11-06",
-  "video": "7704912884203048213",
-  "tom_tat": "Đánh số thứ tự tự động trong Excel: xoá dòng không lủng số, lọc không nhảy số. Cẩn thận dòng cuối với SUBTOTAL, dùng AGGREGATE. Excel cho từng nghề, phần 4: văn thư.",
-  "loi": [
-   "Xoá một dòng là lủng số liền! Đừng kéo chuột đánh số thứ tự nữa anh em.",
-   "Lọc phòng Kế toán còn nhảy một, ba, năm, bảy, mười nữa kìa.",
-   "Nhiều người chỉ SUBTOTAL, mà lọc vô là dòng cuối, chị Bé phòng Nhân sự, vẫn nằm lì đó!",
-   "Xài AGGREGATE ba, năm, đếm từ ô đầu khoá lại tới dòng đang đứng.",
-   "Xoá dòng hay lọc phòng, số tự chạy lại một, hai, ba, chuẩn luôn."
-  ],
-  "ghim": "Ô A2: =AGGREGATE(3,5,$B$2:B2) rồi kéo xuống (B là cột họ tên luôn có dữ liệu). Dùng SUBTOTAL(3,…) cũng được nhưng dòng cuối có thể không ẩn khi lọc. Máy để vùng Việt Nam thì đổi dấu phẩy thành dấu chấm phẩy.",
-  "tep": "46-so-thu-tu-aggregate.xlsx"
- },
- {
-  "ma": "39",
-  "ten": "Ngày 05/11 thành 11/05: Text to Columns DMY",
-  "ngay": "2026-11-06",
-  "video": "7705042552839310612",
-  "tom_tat": "Ngày tháng bị đảo khi xuất ra Excel: Text to Columns, chọn đúng kiểu ngày của tệp gốc, sửa cả cột một lần. Phần 4 loạt làm sạch dữ liệu Excel. Lưu lại nha anh em.",
-  "loi": [
-   "Xuất từ phần mềm ra Excel, ngày 5 tháng 11 biến thành 11 tháng 5. Sửa một lượt cả cột nè anh em!",
-   "Nhìn cột ngày: ô canh phải là Excel hiểu lộn tháng, ô canh trái là Excel bó tay, coi như chữ.",
-   "Khoan đã! Lọc tháng 11: không ra dòng nào hết!",
-   "Bôi cột, vào Text to Columns, bấm Next tới bước ba, chọn Date kiểu tháng ngày năm, đúng kiểu phần mềm xuất ra, Finish.",
-   "12 dòng về đúng tháng 11, canh phải hết. Ô ngày 13 trở lên mà canh trái là dấu hiệu cột bị đảo."
-  ],
-  "ghim": "Bôi cột ngày → Data → Text to Columns → Next → Next → Date: chọn kiểu của tệp gốc (phần mềm ghi tháng/ngày/năm thì chọn MDY) → Finish. Dấu hiệu cột bị đảo: ô ngày 13 trở lên canh trái.",
-  "tep": "39-ngay-thang-bi-dao.xlsx"
- },
- {
-  "ma": "43",
-  "ten": "Kế toán cộng chi phí theo phòng bằng SUMIF",
-  "ngay": "2026-11-05",
-  "video": "7704664498296261908",
-  "tom_tat": "Cộng chi phí theo phòng ban trong Excel bằng SUMIF, kéo một lần ra 10 phòng. Excel cho từng nghề, phần 1: kế toán. Lưu lại cho kỳ quyết toán nha anh em.",
-  "loi": [
-   "Kế toán cuối tháng cộng chi phí 10 phòng, đừng lọc từng phòng rồi cộng tay nữa anh em!",
-   "Cộng có điều kiện, hàm SUMIF: vùng tên phòng, phòng cần cộng, vùng số tiền. Kéo xuống là xong 10 phòng!",
-   "Giờ cộng 10 phòng lại, so với tổng cột số tiền.",
-   "Ủa, lệch 1.850.000! Có một dòng gõ Kế toán dư dấu cách ở cuối, SUMIF bỏ sót luôn.",
-   "Còn gõ hoa hay thường thì không sao, vẫn cộng. Cắt khoảng trắng thừa bằng TRIM là khớp liền!"
-  ],
-  "ghim": "=SUMIF(cột phòng, ô tên phòng, cột số tiền), khoá vùng bằng $ rồi kéo xuống. Máy để vùng Việt Nam thì thay dấu phẩy bằng dấu chấm phẩy. Tổng lệch thì kiểm dấu cách thừa: cắt bằng TRIM. Hoa thường không ảnh hưởng.",
-  "tep": "43-sumif-chi-phi-theo-phong.xlsx"
- },
- {
-  "ma": "38",
-  "ten": "Số tài khoản 16 số mất số cuối, số điện thoại mất số 0",
-  "ngay": "2026-11-05",
-  "video": "7704540942283394325",
-  "tom_tat": "Số tài khoản bị Excel đổi số cuối thành 0, số điện thoại mất số 0 đầu: định dạng Text trước khi dán. Phần 3 loạt làm sạch dữ liệu Excel. Lưu lại trước kỳ lương nha anh em.",
-  "loi": [
-   "Dán số tài khoản vô Excel, số cuối tự biến thành số 0. Chuyển lương sai là mệt lắm anh em!",
-   "Excel chỉ nhớ 15 chữ số. Số dài hơn là phần sau bị thay bằng số 0, không báo lỗi gì hết.",
-   "Số điện thoại thì mất số 0 ở đầu, vì Excel tưởng là số để cộng trừ.",
-   "Cách chặn: bôi cột, chọn định dạng Text trước, rồi mới dán. Số giữ nguyên từng chữ!",
-   "Khoan đã! Cột đã hỏng mà đổi sang Text, số còn biến thành E+15. Phải dán lại từ tệp gốc."
-  ],
-  "ghim": "Excel chỉ giữ 15 chữ số, chữ số thứ 16 trở đi thành 0. Bôi cột → định dạng Text → rồi mới dán. Cột đã hỏng thì đổi sang Text không cứu được (còn hiện dạng E+15), phải dán lại từ tệp gốc. Số có dấu cách giữa các nhóm thì Excel giữ nguyên.",
-  "tep": "38-so-tai-khoan-mat-so.xlsx"
  }
 ];
