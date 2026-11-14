@@ -391,6 +391,11 @@
 
     /* 8. Kính gửi (mục II.9 điểm d) */
     const kg = coNoiDung.find((d) => /^Kính\s+gửi/i.test(d.gon));
+    const tenLoai = dau.find((d) => /^(BÁO CÁO|TỜ TRÌNH)$/.test(d.gon));
+    if (!kg && tenLoai) them({ muc: "canh-bao", ma: "kinh-gui", tieu_de: `${tenLoai.gon === "BÁO CÁO" ? "Báo cáo" : "Tờ trình"} chưa có dòng Kính gửi`,
+      chi_tiet: "Nếu văn bản gửi cơ quan, tổ chức cấp trên thì phải có dòng “Kính gửi:” và tên nơi nhận, đặt dưới tên loại và trích yếu. Văn bản nội bộ không gửi cấp trên thì bỏ qua mục này.",
+      can_cu: `Mục II.9 điểm b Phần I ${PL}: tờ trình, báo cáo của cấp dưới gửi cấp trên và công văn, nơi nhận gồm phần “Kính gửi”. Thông tư 01/2011/TT-BNV (hết hiệu lực 15/6/2020) chỉ quy định dòng này cho công văn.`,
+      cach_sua: "Thêm dòng “Kính gửi: <tên cơ quan cấp trên>” canh giữa, cỡ 13–14, dưới trích yếu.", vi_du: [vd(tenLoai)], video: "58" });
     if (kg && !/^Kính\s+gửi\s*:/i.test(kg.gon)) them({ muc: "loi", ma: "kinh-gui", tieu_de: "Sau “Kính gửi” thiếu dấu hai chấm", can_cu: `Mục II.9 điểm d Phần I ${PL}: sau từ “Kính gửi” có dấu hai chấm (:).`, cach_sua: "Thêm dấu hai chấm: “Kính gửi: …”.", vi_du: [vd(kg)], video: "58" });
 
     /* 9. Nơi nhận (mục II.9 điểm d, ô 9b) */
@@ -471,6 +476,7 @@
     const goLoi = [];
     for (const d of coNoiDung) {
       const t = d.text;
+      if (/^Số\s*:/.test(d.gon) || /\.{3,}/.test(t)) continue; // khoảng trống chờ ghi số, dãy chấm của mẫu là cố ý
       if (/\S {2,}\S/.test(t)) goLoi.push([d, "thừa khoảng trắng"]);
       else if (/\s[,.;:!?](?!\d)/.test(t) && !/\s\.\.\./.test(t)) goLoi.push([d, "khoảng trắng trước dấu câu"]);
       else if (/[,;](?=[\p{L}])/u.test(t)) goLoi.push([d, "thiếu khoảng trắng sau dấu phẩy, chấm phẩy"]);
