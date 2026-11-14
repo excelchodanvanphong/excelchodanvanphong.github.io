@@ -349,7 +349,7 @@
       }
       if (co < 13 || co > 14) sai.push(`cỡ ${co}, đúng là 13–14`);
       if (!dam) sai.push("chưa in đậm");
-      them(sai.length ? { muc: "loi", ma: "tieu-ngu", tieu_de: "Tiêu ngữ chưa đúng", chi_tiet: sai.join("; ") + ".", can_cu: `Mục II.1 điểm b Phần I ${PL}: chữ in thường, cỡ 13–14, đứng, đậm, giữa các cụm từ có gạch nối (-), có cách chữ.`, cach_sua: "Gõ lại đúng “Độc lập - Tự do - Hạnh phúc” bằng phím gạch ngang thường. Word hay tự đổi thành gạch dài: bấm Ctrl + Z ngay sau khi nó đổi.", vi_du: [vd(tn)] }
+      them(sai.length ? { muc: "loi", ma: "tieu-ngu", tieu_de: "Tiêu ngữ chưa đúng", chi_tiet: sai.join("; ") + ".", can_cu: `Mục II.1 điểm b Phần I ${PL}: chữ in thường, cỡ 13–14, đứng, đậm, giữa các cụm từ có gạch nối (-), có cách chữ.`, cach_sua: "Gõ lại đúng “Độc lập - Tự do - Hạnh phúc” bằng phím gạch ngang thường. Nếu Word vừa tự đổi thành gạch dài thì bấm Ctrl + Z một lần.", vi_du: [vd(tn)] }
         : { muc: "dat", ma: "tieu-ngu", tieu_de: "Tiêu ngữ đúng chữ, gạch nối, cỡ, kiểu", can_cu: `Mục II.1 điểm b Phần I ${PL}.` });
     }
 
@@ -371,7 +371,9 @@
     }
 
     /* 7. Địa danh, ngày tháng (mục II.4) */
-    const ngay = dau.find((d) => /ngày\s+\d{1,2}\s+tháng\s+\d{1,2}\s+năm\s+\d{4}/.test(d.gon));
+    // dòng thời gian ban hành: bắt đầu bằng địa danh, chữ "ngày" nằm gần đầu dòng; không lấy dòng căn cứ, trích yếu có ngày tháng
+    const ngay = dau.find((d) => /ngày\s+\d{1,2}\s+tháng\s+\d{1,2}\s+năm\s+\d{4}/.test(d.gon) && !/^(Căn\s+cứ|Theo|Về|V\/v|Số)/i.test(d.gon)
+      && d.gon.indexOf("ngày") <= 45 && d.gon.length < 90);
     if (ngay) {
       const sai = [], m = ngay.gon.match(/ngày\s+(\d{1,2})\s+tháng\s+(\d{1,2})\s+năm/);
       if (m[1].length === 1) sai.push(`“ngày ${m[1]}” phải ghi “ngày 0${m[1]}”`);
