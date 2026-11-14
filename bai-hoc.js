@@ -165,21 +165,5 @@ window.BAI_HOC = [
   ],
   "ghim": "Đặt chuột ngay trước chữ \"Phụ lục\" → Layout → Breaks → Next Page. Bấm đúp vào số trang ở phụ lục → Insert → Page Number → Format Page Numbers → Start at: 1. Phụ lục II làm lại y vậy. Có từ hai phụ lục thì đánh số La Mã: Phụ lục I, Phụ lục II. Ngắt bằng Ctrl+Enter thì không tách được số trang. Căn cứ: điểm a, điểm đ mục 1 Phần III, Phần I, Phụ lục I Nghị định 30/2020/NĐ-CP.",
   "tep": "48-phu-luc-so-trang-rieng.docx"
- },
- {
-  "ma": "44",
-  "ten": "Nhân sự đếm ngày công COUNTIF, tính nửa công",
-  "ngay": "2026-11-07",
-  "video": "7705282553430674708",
-  "tom_tat": "Đếm ngày công trong bảng chấm công Excel bằng COUNTIF, tính cả nửa công. Excel cho từng nghề, phần 2: nhân sự. Lưu lại cho kỳ chấm công nha anh em.",
-  "loi": [
-   "Nhân sự cuối tháng đếm ngày công 30 người, một công thức là xong, tính luôn nửa công anh em!",
-   "Đếm có điều kiện, hàm COUNTIF: đếm chữ x trong dòng của từng người.",
-   "Nửa công thì đếm chữ n, nhân 0,5, cộng vào. Một ô ra đủ, kéo xuống 30 người.",
-   "Hay nè: gõ X hoa hay x thường, COUNTIF đều đếm hết.",
-   "Ủa, anh Bảo thiếu đúng một công! Có ô gõ x dư dấu cách. Ctrl H thay hết là đủ 24,5."
-  ],
-  "ghim": "=COUNTIF(dòng chấm công,\"x\")+COUNTIF(dòng chấm công,\"n\")*0,5 (máy vùng Việt Nam: dấu chấm phẩy thay dấu phẩy). Đếm phép: =COUNTIF(dòng,\"P\"). Thiếu công thì kiểm ô có dấu cách thừa: Ctrl + H thay \"x \" bằng \"x\", tích \"Match entire cell contents\".",
-  "tep": null
  }
 ];
