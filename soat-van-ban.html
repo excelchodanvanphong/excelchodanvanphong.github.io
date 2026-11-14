@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soát thể thức văn bản</title>
+  <meta name="description" content="Tải file Word lên, soát ngay lề, phông, cỡ chữ, Quốc hiệu, số ký hiệu, ngày tháng, nơi nhận theo Nghị định 30/2020/NĐ-CP. File đọc trên máy của bạn, không gửi đi đâu.">
+  <meta property="og:title" content="Soát thể thức văn bản theo Nghị định 30">
+  <meta property="og:description" content="Miễn phí, file không rời máy của bạn.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23107c41'/%3E%3Ctext x='32' y='45' font-size='38' font-family='Arial' font-weight='900' fill='white' text-anchor='middle'%3EX%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .vung-tha { display: grid; place-items: center; text-align: center; gap: 10px; padding: 36px 20px; border: 2px dashed var(--xanh-vien); border-radius: var(--bo); background: var(--giay); cursor: pointer; transition: background .15s, border-color .15s; }
+    .vung-tha:hover, .vung-tha.dang-keo { background: var(--xanh-nhat); border-color: var(--xanh); }
+    .vung-tha:focus-visible { outline: 3px solid var(--xanh); outline-offset: 3px; }
+    .vung-tha .bieu { width: 56px; height: 56px; border-radius: 14px; background: var(--xanh); color: #fff; display: grid; place-items: center; font-weight: 900; font-size: 26px; }
+    .vung-tha b { font-size: 18px; }
+    .vung-tha span { color: var(--chu-phu); font-size: 14px; }
+    .an-toan { display: flex; gap: 10px; align-items: flex-start; margin: 14px 0 0; padding: 12px 14px; border-radius: 12px; background: var(--xanh-nhat); color: var(--xanh-dam); font-size: 14px; }
+    .tong { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 18px 0; }
+    @media (max-width: 560px) { .tong { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    .o-so { background: var(--giay); border: 1px solid var(--vien); border-radius: 12px; padding: 12px 14px; }
+    .o-so b { display: block; font-size: 28px; line-height: 1.1; font-variant-numeric: tabular-nums; }
+    .o-so span { font-size: 13px; color: var(--chu-phu); }
+    .o-so.loi b { color: var(--do); } .o-so.cb b { color: #b7791f; } .o-so.gy b { color: var(--chu-phu); } .o-so.dat b { color: var(--xanh); }
+    .muc-kq { background: var(--giay); border: 1px solid var(--vien); border-left: 5px solid var(--vien); border-radius: 12px; padding: 14px 16px; margin: 10px 0; }
+    .muc-kq.loi { border-left-color: var(--do); } .muc-kq.canh-bao { border-left-color: #d69e2e; } .muc-kq.goi-y { border-left-color: var(--chu-phu); } .muc-kq.dat { border-left-color: var(--xanh); }
+    .muc-kq h3 { margin: 0 0 4px; font-size: 17px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+    .the-muc { font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+    .loi .the-muc { background: var(--do-nhat); color: var(--do); } .canh-bao .the-muc { background: #fdf3dc; color: #8a5a00; }
+    .goi-y .the-muc { background: var(--nen); color: var(--chu-phu); } .dat .the-muc { background: var(--xanh-nhat); color: var(--xanh-dam); }
+    @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .canh-bao .the-muc { background: #3a2e12; color: #f6d27a; } }
+    .muc-kq p { margin: 6px 0; } .muc-kq .cc { font-size: 14px; color: var(--chu-phu); }
+    .muc-kq .sua { font-size: 15px; } .muc-kq .sua b { color: var(--xanh-dam); }
+    .muc-kq ul { margin: 6px 0; padding-left: 20px; font-size: 14px; color: var(--chu-phu); }
+    .nhom-kq h2 { font-size: 20px; margin: 26px 0 6px; }
+    details.da-dat summary { cursor: pointer; font-weight: 700; margin: 22px 0 8px; }
+    .bao-loi { padding: 14px 16px; border-radius: 12px; background: var(--do-nhat); color: var(--do); font-weight: 600; }
+    .dang-doc { color: var(--chu-phu); }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <header class="dau">
+    <div class="khung">
+      <a class="logo" href="./"><span class="logo-o">X</span><span>Excel cho dân văn phòng</span></a>
+      <nav class="menu" aria-label="Mục chính">
+        <a href="./#bai-moi">Bài học</a>
+        <a href="./#cong-thuc">Công thức</a>
+        <a aria-current="page" href="soat-van-ban.html">Soát văn bản</a>
+        <a class="nut-tiktok chi-trinh-duyet" href="https://www.tiktok.com/@aichovanphong" target="_blank" rel="noopener">TikTok ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="muc">
+      <div class="khung">
+        <span class="nhan">Miễn phí · Không cần đăng nhập</span>
+        <h1 style="font-size:clamp(28px,4.4vw,44px)">Soát thể thức văn bản <em>theo Nghị định 30</em></h1>
+        <p class="dan" style="color:var(--chu-phu);max-width:46em">Chọn file Word (.docx). Công cụ soát lề, khổ giấy, phông, màu chữ, cỡ chữ, giãn dòng, số trang, Quốc hiệu, Tiêu ngữ, số ký hiệu, ngày tháng, Kính gửi, Nơi nhận, căn cứ; mỗi lỗi ghi rõ mục nào của Phụ lục I Nghị định 30/2020/NĐ-CP và cách sửa trên Word.</p>
+
+        <label class="vung-tha" id="vung-tha" tabindex="0">
+          <input type="file" id="chon-file" accept=".docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document" hidden>
+          <div class="bieu" aria-hidden="true">W</div>
+          <b>Bấm để chọn file Word</b>
+          <span>hoặc kéo thả file .docx vào đây</span>
+        </label>
+        <p class="an-toan"><span aria-hidden="true">🔒</span><span>File được đọc ngay trên máy của anh em, <b>không tải lên máy chủ nào</b>. Tắt trang là hết. Dù vậy, đừng soát văn bản mật hoặc văn bản có dữ liệu cá nhân trên máy dùng chung.</span></p>
+
+        <div id="ket-qua" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="chan">
+    <div class="khung">
+      <p><b>Excel cho dân văn phòng</b> · kênh TikTok <a href="https://www.tiktok.com/@aichovanphong" target="_blank" rel="noopener">@aichovanphong</a></p>
+      <p>Công cụ soát tự động theo quy tắc, giúp bắt nhanh lỗi hay gặp; không thay việc đọc lại và không thay ý kiến của văn thư cơ quan. Văn bản dùng bảng, khung đặc biệt có thể bị báo nhầm. Khi soạn văn bản chính thức, đối chiếu văn bản gốc còn hiệu lực.</p>
+      <p>Trang không thu thập thông tin người xem, không dùng cookie theo dõi. © 2026</p>
+    </div>
+  </footer>
+
+  <script src="bai-hoc.js"></script>
+  <script src="soat-van-ban.js"></script>
+  <script>
+  (function () {
+    const TIKTOK = /musical_ly|BytedanceWebview|TikTok|trill/i.test(navigator.userAgent);
+    const $ = (s) => document.querySelector(s);
+    const el = (tag, cls, ...con) => { const e = document.createElement(tag); if (cls) e.className = cls; con.flat().forEach((c) => c != null && e.append(c.nodeType ? c : document.createTextNode(c))); return e; };
+    const NHAN = { "loi": "Lỗi", "canh-bao": "Cần xem lại", "goi-y": "Gợi ý", "dat": "Đạt" };
+    const bai = (ma) => (window.BAI_HOC || []).find((b) => b.ma === ma);
+    const vung = $("#vung-tha"), chon = $("#chon-file"), ra = $("#ket-qua");
+
+    function theKq(x) {
+      const the = el("article", "muc-kq " + x.muc,
+        el("h3", "", el("span", "the-muc", NHAN[x.muc]), x.tieu_de));
+      if (x.chi_tiet) the.append(el("p", "", x.chi_tiet));
+      if (x.vi_du && x.vi_du.length) the.append(el("ul", "", x.vi_du.map((v) => el("li", "", `Đoạn ${v.doan}: “${v.trich}”` + (v.ghi ? ` (${v.ghi})` : "")))));
+      if (x.cach_sua) the.append(el("p", "sua", el("b", "", "Cách sửa: "), x.cach_sua));
+      if (x.can_cu) the.append(el("p", "cc", "Căn cứ: " + x.can_cu));
+      const b = x.video && bai(x.video);
+      if (b) {
+        if (TIKTOK) the.append(el("p", "cc", `Video hướng dẫn: “${b.ten}” trên kênh @aichovanphong.`));
+        else { const a = el("a", "", `Xem bài hướng dẫn: ${b.ten} →`); a.href = "bai-hoc/" + b.ma + ".html"; the.append(el("p", "cc", a)); }
+      }
+      return the;
+    }
+
+    function hien(kq) {
+      const t = kq.tong_quan;
+      ra.replaceChildren();
+      ra.append(el("h2", "", "Kết quả soát: " + t.ten));
+      ra.append(el("p", "dang-doc", `${t.so_doan} đoạn văn` + (t.so_trang ? `, ${t.so_trang} trang` : "") + "."));
+      if (!t.la_van_ban_hanh_chinh) ra.append(el("p", "an-toan", "Không thấy Quốc hiệu, số ký hiệu hay Nơi nhận: có thể đây không phải văn bản hành chính, nên một số mục chỉ soát phần định dạng chung."));
+      ra.append(el("div", "tong",
+        el("div", "o-so loi", el("b", "", String(t.loi)), el("span", "", "Lỗi")),
+        el("div", "o-so cb", el("b", "", String(t.canh_bao)), el("span", "", "Cần xem lại")),
+        el("div", "o-so gy", el("b", "", String(t.goi_y)), el("span", "", "Gợi ý")),
+        el("div", "o-so dat", el("b", "", String(t.dat)), el("span", "", "Đạt"))));
+      for (const [m, ten] of [["loi", "Lỗi phải sửa"], ["canh-bao", "Cần xem lại"], ["goi-y", "Gợi ý"]]) {
+        const ds = kq.ket_qua.filter((x) => x.muc === m);
+        if (ds.length) ra.append(el("div", "nhom-kq", el("h2", "", ten), ds.map(theKq)));
+      }
+      if (!t.loi && !t.canh_bao) ra.append(el("p", "an-toan", "Không thấy lỗi thể thức trong các mục công cụ kiểm được. Vẫn nên đọc lại nội dung, chính tả trước khi trình ký."));
+      const dat = kq.ket_qua.filter((x) => x.muc === "dat");
+      if (dat.length) { const d = el("details", "da-dat", el("summary", "", `${dat.length} mục đã đạt`), dat.map(theKq)); ra.append(d); }
+      ra.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    async function xuLy(f) {
+      if (!f) return;
+      ra.replaceChildren(el("p", "dang-doc", "Đang đọc " + f.name + "…"));
+      if (!/\.docx$/i.test(f.name)) { ra.replaceChildren(el("p", "bao-loi", "Chỉ nhận file .docx. File .doc cũ: mở bằng Word, chọn File › Save As › Word Document (.docx).")); return; }
+      if (f.size > 20 * 1024 * 1024) { ra.replaceChildren(el("p", "bao-loi", "File lớn hơn 20 MB. Xoá bớt ảnh hoặc tách văn bản rồi soát lại.")); return; }
+      if (typeof DecompressionStream === "undefined") { ra.replaceChildren(el("p", "bao-loi", "Trình duyệt này quá cũ, chưa đọc được file nén. Mở trang bằng Chrome, Edge hoặc Safari bản mới.")); return; }
+      try { hien(await window.SoatVanBan.soat(await f.arrayBuffer(), f.name)); }
+      catch (e) { ra.replaceChildren(el("p", "bao-loi", e.message || "Không đọc được file.")); console.error(e); }
+      chon.value = "";
+    }
+
+    chon.addEventListener("change", () => xuLy(chon.files[0]));
+    vung.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); chon.click(); } });
+    ["dragenter", "dragover"].forEach((k) => vung.addEventListener(k, (e) => { e.preventDefault(); vung.classList.add("dang-keo"); }));
+    ["dragleave", "drop"].forEach((k) => vung.addEventListener(k, (e) => { e.preventDefault(); vung.classList.remove("dang-keo"); }));
+    vung.addEventListener("drop", (e) => xuLy(e.dataTransfer.files[0]));
+  })();
+  </script>
+  <script src="thoat-tiktok.js"></script>
+</body>
+</html>
