@@ -1,6 +1,115 @@
 /* Sinh tự động bằng dong_bo_web.py bai-hoc, không sửa tay. */
 window.BAI_HOC = [
  {
+  "ma": "73",
+  "ten": "Văn bản ký số: bản A hay B đúng NĐ 30? chữ ký xanh, dấu đè 1/3 bên trái",
+  "ngay": "2026-11-15",
+  "video": "7708166662599609606",
+  "tom_tat": "Văn bản ký số: chữ ký màu xanh, dấu đỏ đúng kích thước thật, đè khoảng 1/3 chữ ký về bên trái (mục II.7 điểm d, II.8 điểm a Phụ lục I Nghị định 30/2020/NĐ-CP). Hình do phần mềm ký số hiển thị.",
+  "loi": [
+   "Dấu đè giữa chữ ký là sai rồi anh em!",
+   "Một, Nghị định 30 quy định dấu đè 1/3 chữ ký về bên trái, Thông tư cũ chưa có.",
+   "Hai, hình chữ ký màu xanh, nằm giữa chức vụ và họ tên.",
+   "Ba, hình dấu màu đỏ, đúng kích thước thật của dấu.",
+   "Khoan! Hình này do phần mềm ký số hiện ra, đừng tự dán ảnh con dấu bằng tay.",
+   "Nhận văn bản ký số, soát ba chi tiết: chữ ký xanh, dấu đỏ đè 1/3 bên trái.",
+   "Văn bản ký số anh em hay nhận giống: A, bản A; hay B, bản B? Gõ A hoặc B cho mình biết nha."
+  ],
+  "ghim": "Căn cứ: Phụ lục I Nghị định 30/2020/NĐ-CP, mục II.7 điểm d (hình chữ ký số: chữ ký của người có thẩm quyền, màu xanh, .png nền trong suốt, canh giữa chức vụ và họ tên) và mục II.8 điểm a (hình dấu: màu đỏ, kích thước thật, .png nền trong suốt, trùm khoảng 1/3 chữ ký về bên trái). Thông tư 01/2011/TT-BNV chưa quy định hình ảnh chữ ký số.\nHình trong video là minh họa giả lập (CÔNG TY ABC, MẪU), không phải văn bản thật. Hình chữ ký, hình dấu do phần mềm ký số hiển thị khi ký, không dán tay.",
+  "tep": null
+ },
+ {
+  "ma": "72",
+  "ten": "Dòng ngày này sai mấy chỗ? Trò đếm 5 lỗi",
+  "ngay": "2026-11-14",
+  "video": "7707996026166136085",
+  "tom_tat": "Năm lỗi sai cơ bản khi soạn văn bản, nằm gọn trong một dòng ngày tháng. Anh em hay dính lỗi nào?",
+  "loi": [
+   "Năm lỗi sai cơ bản khi soạn văn bản!",
+   "Một, viết tắt tên thành phố, phải ghi đủ Thành phố Hồ Chí Minh.",
+   "Hai, ngày 9 thiếu số 0, phải là ngày 09.",
+   "Ba, dòng này phải in nghiêng. Bốn, sau địa danh phải có dấu phẩy.",
+   "Khoan, chỗ thứ năm mới hay sót: canh giữa cả trang là lệch Quốc hiệu 3 cm.",
+   "Đưa dòng ngày vào ô dưới Tiêu ngữ, bấm canh giữa, bấm nghiêng, ghi đủ tên là xong.",
+   "Chỗ anh em hay dính lỗi nào: A, quên số 0; hay B, canh giữa cả trang? Gõ A hoặc B cho mình biết nha."
+  ],
+  "ghim": "5 lỗi ở dòng địa danh, ngày tháng (Phụ lục I Nghị định 30/2020/NĐ-CP, mục II.4): 1) viết tắt TP. HCM, phải ghi đủ \"Thành phố Hồ Chí Minh\" (điểm a; Phụ lục II mục III.1 điểm c); 2) ngày 9 phải ghi 09 (điểm b, chỉ ngày dưới 10 và tháng 1, 2); 3) chữ nghiêng; 4) sau địa danh có dấu phẩy; 5) đặt cùng dòng số ký hiệu, canh giữa theo Quốc hiệu, Tiêu ngữ (điểm c). Bản sai đo trên Word 2021 lệch Quốc hiệu 30 mm.\nQuy định giữ nguyên từ Điều 9 Thông tư 01/2011/TT-BNV.",
+  "tep": null
+ },
+ {
+  "ma": "71",
+  "ten": "Tháng 3 không phải thêm số 0: trả lời bình luận video 49",
+  "ngay": "2026-11-14",
+  "video": "7707871649613253908",
+  "tom_tat": "Chỉ ngày dưới 10 và tháng 1, 2 phải thêm số 0 (mục II.4 điểm b Phụ lục I Nghị định 30/2020/NĐ-CP); tháng 3 trở đi không phải thêm. Trả lời bình luận dưới video ngày tháng thiếu số 0.",
+  "loi": [
+   "Tháng 3 có phải ghi thêm số 0 thành tháng 03 không? Trả lời dứt khoát cho anh em nè!",
+   "Nghị định 30 chỉ bắt thêm số 0 cho ngày dưới 10 và tháng 1, tháng 2.",
+   "Khoan! Chính Nghị định 30 ghi ngày 05 tháng 3 năm 2020, tháng 3 không có số 0.",
+   "Dùng lệnh thay tự động: chỉ tháng 1, tháng 2 được thêm số 0, tháng 3 tới 12 đứng yên.",
+   "Ngày dưới 10, tháng 1, 2 thêm số 0, còn lại để nguyên.",
+   "Chỗ anh em đang ghi: A, tháng 3; hay B, tháng 03? Gõ A hoặc B cho mình biết nha."
+  ],
+  "ghim": "Căn cứ: mục II.4 điểm b Phần I Phụ lục I Nghị định 30/2020/NĐ-CP: \"đối với những số thể hiện ngày nhỏ hơn 10 và tháng 1, 2 phải ghi thêm số 0 phía trước\"; quy định này giữ nguyên từ Điều 9 khoản 1 điểm b Thông tư 01/2011/TT-BNV. Nghị định không cấm ghi tháng 03, chỉ không bắt buộc.\nLệnh Word (Ctrl+H, tick Use wildcards): tìm ngày ([1-9]) tháng thay ngày 0\\1 tháng; tìm tháng ([12]) năm thay tháng 0\\1 năm.",
+  "tep": null
+ },
+ {
+  "ma": "70",
+  "ten": "KT., TL., TUQ., Q.: cấp phó điều hành ký KT., Q. chỉ khi giao quyền cấp trưởng",
+  "ngay": "2026-11-14",
+  "video": "7707802636967349524",
+  "tom_tat": "Cấp phó được giao điều hành ký KT., không ký Q. Chữ Q. chỉ dùng khi được giao quyền cấp trưởng (mục II.7 điểm b Phụ lục I Nghị định 30/2020/NĐ-CP). Bảng 5 trường hợp TM., Q., KT., TL., TUQ.",
+  "loi": [
+   "Phó giám đốc được giao điều hành mà ký Q. Giám đốc là sai rồi anh em!",
+   "Quy định cũ chỉ nói cấp phó phụ trách. Nghị định 30 thêm cả cấp phó điều hành, vẫn ký KT.",
+   "Khoan! Chữ Q. chỉ dùng khi được giao quyền cấp trưởng.",
+   "Năm chữ viết tắt, mỗi chữ một trường hợp, chụp lại là khỏi nhầm.",
+   "Gõ thường cũng được: bôi khối, bấm nút Aa, chọn chữ in hoa, Ctrl B.",
+   "Phó điều hành vẫn ký KT., có giao quyền mới ghi Q.",
+   "Phó giám đốc được giao điều hành ký: A, KT. Giám đốc; hay B, Q. Giám đốc? Gõ A hoặc B cho mình biết nha."
+  ],
+  "ghim": "Căn cứ hiện hành: mục II.7 điểm b, đ Phần I Phụ lục I Nghị định 30/2020/NĐ-CP: TM. thay mặt tập thể; Q. được giao quyền cấp trưởng; KT. ký thay người đứng đầu, cấp phó được giao phụ trách hoặc điều hành cũng ký như KT.; TL. thừa lệnh; TUQ. thừa ủy quyền. Chữ viết tắt và chức vụ: in hoa, cỡ 13–14, đứng, đậm.\nCăn cứ cũ: Điều 12 khoản 1 Thông tư 01/2011/TT-BNV (hết hiệu lực 15/6/2020): chỉ nêu cấp phó được giao phụ trách; Q. Giám đốc ghi như một chức vụ.\nĐáp án câu hỏi: A.",
+  "tep": null
+ },
+ {
+  "ma": "69",
+  "ten": "Soi báo cáo: 5 chỗ còn theo TT 01/2011, sửa theo NĐ 30",
+  "ngay": "2026-11-13",
+  "video": "7707625742942702869",
+  "tom_tat": "Báo cáo còn làm theo Thông tư 01/2011/TT-BNV (hết hiệu lực 15/6/2020)? Soát 5 chỗ theo Phụ lục I Nghị định 30/2020/NĐ-CP: màu chữ, phông, cách dòng, Kính gửi, số trang. Bảng kiểm ở link hồ sơ. Văn bản đúng chuẩn, tổng hợp.",
+  "loi": [
+   "Còn sửa lại mẫu báo cáo cũ là dính đủ năm lỗi này nè anh em!",
+   "Giờ theo Nghị định 30 rồi nha, một là chữ xanh phải về màu đen.",
+   "Hai, phông Arial đổi sang Times New Roman.",
+   "Ba, bỏ cách dòng cố định 15 điểm, chọn từ dòng đơn tới một rưỡi.",
+   "Bốn, báo cáo gửi cấp trên phải có dòng Kính gửi.",
+   "Khoan! Chỗ thứ năm nằm tận trang hai, số trang góc phải dưới chân là sai.",
+   "Page Number, gỡ số cũ trước, rồi Top of Page chọn số giữa, tick Different First Page.",
+   "Khuôn cũ thì lỗi cũ, chụp bảng này lại kiểm cho chắc."
+  ],
+  "ghim": "Bảng kiểm theo Phụ lục I NĐ 30/2020/NĐ-CP: 1) chữ màu đen, 2) Times New Roman (mục I.4); 3) cách dòng từ dòng đơn tới 1,5 lines, bỏ 15pt Exactly (mục II.6 điểm e); 4) báo cáo, tờ trình gửi cấp trên có Kính gửi (mục II.9 điểm b); 5) số trang giữa lề trên, trang 1 không số (mục I.7).\nSố trang: Insert > Page Number > Remove Page Numbers, rồi Top of Page > Plain Number 2, tick Different First Page.\nQuy định cũ: Thông tư 01/2011/TT-BNV, hết hiệu lực 15/6/2020.",
+  "tep": "69-bang-kiem-the-thuc-bao-cao.pdf"
+ },
+ {
+  "ma": "64",
+  "ten": "Tổ công tác ban hành văn bản: hệ thống số riêng",
+  "ngay": "2026-11-13",
+  "video": "7707504831501569281",
+  "tom_tat": "Nghị định 30/2020/NĐ-CP: Hội đồng, Ban, Tổ được ghi là cơ quan ban hành và dùng con dấu, chữ ký số của cơ quan thì phải lấy hệ thống số riêng; Thông tư 01/2011/TT-BNV chỉ nêu Hội đồng, Ban tư vấn. Excel đánh số riêng từng dãy.",
+  "loi": [
+   "Tổ công tác ban hành văn bản mà dùng chung dãy số với cơ quan là sai đó anh em!",
+   "Thông tư cũ chỉ nêu Hội đồng, Ban. Nghị định 30 thêm cả Tổ.",
+   "Căn cứ: Thông tư 01/2011 đã hết hiệu lực, nay là Phụ lục I Nghị định 30, phần Số, ký hiệu.",
+   "Khoan! Điều kiện: Tổ đứng tên ban hành, dùng con dấu, chữ ký số của cơ quan.",
+   "Để Excel đếm riêng: cơ quan một dãy, Tổ một dãy.",
+   "Gõ công thức như trên hình, nhớ khóa ô đầu bằng đô la.",
+   "Kéo xuống: Tổ công tác đi số 01, 02, 03 riêng.",
+   "Tổ đứng tên ban hành: số riêng."
+  ],
+  "ghim": "=TEXT(COUNTIF($A$2:A2,A2),\"00\")&\"/\"&XLOOKUP(B2,$G$2:$G$4,$H$2:$H$4)&\"-\"&A2\nA: đơn vị ban hành (ABC: cơ quan, TCT: Tổ công tác, giả lập), B: loại văn bản, G:H bảng viết tắt. Máy vùng Việt Nam dùng dấu chấm phẩy thay dấu phẩy.\nCăn cứ cũ: Điều 8 khoản 1 Thông tư 01/2011/TT-BNV (hết hiệu lực 15/6/2020). Căn cứ hiện hành: mục II.3 điểm a Phần I Phụ lục I Nghị định 30/2020/NĐ-CP.",
+  "tep": "64-so-rieng-to-cong-tac.xlsx"
+ },
+ {
   "ma": "61",
   "ten": "Tiêu đề Mục cỡ 12–13 lên 13–14",
   "ngay": "2026-11-12",
