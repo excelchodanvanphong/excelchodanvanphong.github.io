@@ -1,6 +1,106 @@
 /* Sinh tự động bằng dong_bo_web.py bai-hoc, không sửa tay. */
 window.BAI_HOC = [
  {
+  "ma": "79",
+  "ten": "Báo cáo lên trên có Kính gửi (Soát 5/5), mở đầu dấu TRẢ LẠI",
+  "ngay": "2026-11-17",
+  "video": "7708903297813351732",
+  "tom_tat": "Báo cáo, tờ trình gửi cấp trên phải có dòng Kính gửi (mục II.9 điểm b Phụ lục I Nghị định 30/2020/NĐ-CP); Thông tư 01/2011 chỉ quy định cho công văn.",
+  "loi": [
+   "Báo cáo gửi cấp trên mà thiếu hai chữ này là sai rồi anh em!",
+   "Thông tư cũ chỉ bắt công văn có Kính gửi. Nghị định 30 thêm báo cáo, tờ trình gửi cấp trên.",
+   "Căn cứ: mục II.9 điểm b, Phụ lục I Nghị định 30. Thông tư 01 năm 2011 đã hết hiệu lực.",
+   "Nạp báo cáo vào trang soát: công cụ nhắc ngay, chưa có dòng Kính gửi.",
+   "Khoan! Thêm vào rồi mà quên dấu hai chấm, nó cũng bắt.",
+   "Ghi Kính gửi, hai chấm, tên cơ quan cấp trên, canh giữa dưới trích yếu.",
+   "Gửi nhiều nơi thì mỗi nơi một dòng, gạch đầu dòng. Nạp lại: hết lỗi.",
+   "Báo cáo lên trên, phải có Kính gửi.",
+   "Báo cáo chỗ anh em gửi lên trên: A, có Kính gửi; hay B, không có? Gõ A hoặc B cho mình biết nha."
+  ],
+  "ghim": "Căn cứ: mục II.9 điểm b Phần I Phụ lục I Nghị định 30/2020/NĐ-CP: tờ trình, báo cáo của cơ quan, tổ chức cấp dưới gửi cấp trên và công văn, nơi nhận gồm phần thứ nhất là từ \"Kính gửi\" và tên cơ quan, tổ chức trực tiếp giải quyết; điểm d: sau \"Kính gửi\" có dấu hai chấm, gửi nhiều nơi thì mỗi nơi một dòng, đầu dòng gạch nối, cuối dòng chấm phẩy, dòng cuối dấu chấm. Điều 14 Thông tư 01/2011/TT-BNV (hết hiệu lực 15/6/2020) quy định cho công văn.\nĐáp án: A, có Kính gửi.\nVăn bản trong video là giả lập.",
+  "tep": null
+ },
+ {
+  "ma": "80",
+  "ten": "Tiêu ngữ: gạch nối, không gạch dài (Soát văn bản 3 giây 1/5), hook chữ to",
+  "ngay": "2026-11-16",
+  "video": "7708550266567560468",
+  "tom_tat": "Gạch giữa Độc lập - Tự do - Hạnh phúc là gạch nối (-), có cách chữ (mục II.1 điểm b Phụ lục I Nghị định 30/2020/NĐ-CP). Gạch dài nhìn gần như y nhau ở cỡ chữ thật. Soát bằng công cụ miễn phí, không cần đăng nhập, file đọc ngay trên máy, không tải lên mạng.",
+  "loi": [
+   "Gạch giữa Độc lập, Tự do, Hạnh phúc của anh em là gạch ngắn hay gạch dài?",
+   "Thông tư cũ hay Nghị định 30 đều ghi: giữa các cụm từ có gạch nối, có cách chữ.",
+   "Căn cứ: mục II.1 điểm b, Phụ lục I Nghị định 30. Là gạch ngắn.",
+   "Khoan! Ở cỡ chữ thật, hai loại gạch nhìn gần như y nhau.",
+   "Phóng to mới thấy: gạch dài rộng gấp rưỡi gạch nối.",
+   "Nạp file vào trang soát văn bản: bắt được ngay, đang dùng gạch dài.",
+   "Gõ lại bằng phím gạch ngang thường. Word vừa tự đổi thì bấm Ctrl Z.",
+   "Muốn tắt hẳn: vào AutoCorrect, bỏ tick Hyphens with dash.",
+   "Tiêu ngữ dùng gạch ngắn.",
+   "Mẫu văn bản chỗ anh em đang dùng: A, gạch ngắn; hay B, gạch dài? Gõ A hoặc B cho mình biết nha."
+  ],
+  "ghim": "Căn cứ: mục II.1 điểm b Phần I Phụ lục I Nghị định 30/2020/NĐ-CP: Tiêu ngữ \"Độc lập - Tự do - Hạnh phúc\" chữ in thường, cỡ 13–14, đứng, đậm; giữa các cụm từ có gạch nối (-), có cách chữ. Khoản 2 Điều 6 Thông tư 01/2011/TT-BNV (hết hiệu lực 15/6/2020) cũng ghi như vậy.\nWord: gõ lại bằng phím gạch ngang thường; Word vừa tự đổi thì Ctrl + Z. Tắt hẳn: File › Options › Proofing › AutoCorrect Options › AutoFormat As You Type, bỏ tick \"Hyphens (--) with dash\".\nĐáp án: A, gạch ngắn.\nCông cụ soát: link trong hồ sơ, mục \"Soát văn bản\". Văn bản trong video là khuôn giả lập.",
+  "tep": null
+ },
+ {
+  "ma": "77",
+  "ten": "Số trang ở trên, trang đầu ẩn",
+  "ngay": "2026-11-16",
+  "video": "7708729658858016020",
+  "tom_tat": "Số trang văn bản hành chính đặt giữa phần lề trên, trang đầu không hiện số (mục I.7 Phụ lục I Nghị định 30/2020/NĐ-CP). Thông tư 01/2011 cũ để góc phải cuối trang.",
+  "loi": [
+   "Đừng để số trang ở góc dưới bên phải nữa!",
+   "Thông tư cũ để góc phải cuối trang. Nghị định 30 đưa lên giữa đầu trang, trang một không hiện số.",
+   "Căn cứ: mục I.7, Phụ lục I Nghị định 30. Thông tư 01 năm 2011 đã hết hiệu lực.",
+   "Nạp file vào trang soát văn bản, công cụ báo ngay: số trang đặt ở chân trang.",
+   "Khoan! Đưa lên đầu trang rồi, nó còn bắt: trang đầu đang hiện số.",
+   "Bấm đúp chân trang, xoá số. Insert, Page Number, Top of Page, chọn số ở giữa.",
+   "Tick Different First Page. Nạp lại: hết lỗi.",
+   "Số trang ở trên, trang đầu không số.",
+   "Văn bản chỗ anh em đánh số trang: A, ở trên; hay B, ở dưới? Gõ A hoặc B cho mình biết nha."
+  ],
+  "ghim": "Căn cứ: mục I.7 Phần I Phụ lục I Nghị định 30/2020/NĐ-CP: số trang đánh từ 1, cỡ 13–14, đứng, canh giữa trong phần lề trên, không hiển thị số trang thứ nhất. Điểm g khoản 2 Điều 15 Thông tư 01/2011/TT-BNV (hết hiệu lực 15/6/2020) để góc phải cuối trang.\nWord: Insert › Page Number › Top of Page › Plain Number 2; tick Different First Page.\nĐáp án: A, ở trên.\nVăn bản trong video là giả lập.",
+  "tep": null
+ },
+ {
+  "ma": "76",
+  "ten": "Soát văn bản 3 giây, miễn phí: phông, màu chữ",
+  "ngay": "2026-11-16",
+  "video": "7708613201407020308",
+  "tom_tat": "Soát thể thức văn bản theo Nghị định 30 trong 3 giây: miễn phí, không cần đăng nhập, file đọc ngay trên máy, không tải lên mạng. Trang báo cáo giả lập trong video ra 5 lỗi. Phông Times New Roman, màu đen theo mục I.4 Phụ lục I Nghị định 30/2020/NĐ-CP.",
+  "loi": [
+   "Đừng trình ký khi chưa soát ba giây nữa! Trang này dính năm lỗi.",
+   "Thông tư cũ chỉ nói phông Unicode. Nghị định 30 ghi rõ: Times New Roman, màu đen.",
+   "Căn cứ: mục I.4, Phụ lục I Nghị định 30. Thông tư 01 năm 2011 đã hết hiệu lực.",
+   "Anh em mở trang soát văn bản, chọn file Word.",
+   "Khoan! Ba giây, ra đủ năm lỗi, lỗi nào cũng ghi mục nào của Nghị định.",
+   "Miễn phí, không cần đăng nhập, file đọc ngay trên máy, không tải lên mạng.",
+   "Sửa phông: Ctrl A, chọn Times New Roman, màu chữ Automatic.",
+   "Soát ba giây, khỏi bị trả văn bản.",
+   "Văn bản chỗ anh em đang dùng: A, Times New Roman; hay B, phông khác? Gõ A hoặc B cho mình biết nha."
+  ],
+  "ghim": "Căn cứ: mục I.4 Phần I Phụ lục I Nghị định 30/2020/NĐ-CP: phông Times New Roman, Unicode TCVN 6909:2001, màu đen. Điều 4 Thông tư 01/2011/TT-BNV (hết hiệu lực 15/6/2020) chỉ ghi phông Unicode, không ghi màu.\nTrang báo cáo giả lập trong video: 5 lỗi (lề trái 20 mm, phông Arial, chữ đỏ, cỡ 12, giãn 2 dòng).\nCông cụ: link trong hồ sơ, mục \"Soát văn bản\". Miễn phí, file đọc trên máy anh em, không tải lên mạng. Công cụ soát theo quy tắc, vẫn nên đọc lại trước khi trình ký. Văn bản trong video là giả lập.",
+  "tep": null
+ },
+ {
+  "ma": "75",
+  "ten": "Văn bản Đảng in hai mặt: mặt sau đảo lề",
+  "ngay": "2026-11-15",
+  "video": "7708358931239685397",
+  "tom_tat": "Văn bản Đảng in hai mặt: mặt trước lề trái 30, phải 15 mm; mặt sau lề trái 15, phải 30 mm (Phần II.IV mục 4.1, 4.2 Hướng dẫn 05-HD/VPTW ngày 27/5/2026, thay Hướng dẫn 36-HD/VPTW). Trong Word: Custom Margins, Mirror margins, Inside 3 cm, Outside 1,5 cm.",
+  "loi": [
+   "Đừng để in xong mới biết văn bản Đảng đổi hướng dẫn rồi anh em!",
+   "Hướng dẫn 05 năm 2026 đã thay Hướng dẫn 36, ghi riêng lề cho mặt sau.",
+   "Mặt trước lề trái 30, phải 15. Mặt sau đảo lại: trái 15, phải 30 mi li mét.",
+   "Khoan, để Word mặc định thì mặt sau vẫn lề trái 30, mình đo thật rồi.",
+   "Vào Custom Margins, chọn Mirror margins, Inside 3 xen ti, Outside 1,5 xen ti.",
+   "Xuất PDF ra xem: mặt sau đã tự đảo, hai bên gáy đều 30.",
+   "Mặt sau: trái 15, phải 30.",
+   "Chi bộ anh em đang in văn bản: A, một mặt; hay B, hai mặt? Gõ A hoặc B cho mình biết nha."
+  ],
+  "ghim": "Căn cứ: Hướng dẫn số 05-HD/VPTW ngày 27/5/2026 của Văn phòng Trung ương Đảng về thể thức và kỹ thuật trình bày văn bản của Đảng.\n- Phần II.IV mục 4.1: lề trên 20 mm, lề dưới 20 mm, lề trái 30 mm, lề phải 15 mm.\n- Mục 4.2: in hai mặt thì mặt sau lề trên 20, dưới 20, trái 15, phải 30 mm.\n- Phần III mục 1: có hiệu lực từ ngày ký, thay thế Hướng dẫn số 36-HD/VPTW.\nChạy thật Word 2021: không bật Mirror margins thì trang 2 lề trái đo được 30 mm; bật Mirror margins (Inside 3 cm, Outside 1,5 cm) thì trang 2 lề trái 15 mm. Văn bản trong video là giả lập.\nVideo nêu theo Hướng dẫn 05-HD/VPTW đang có hiệu lực; chưa đối chiếu chi tiết với Hướng dẫn 36-HD/VPTW.",
+  "tep": null
+ },
+ {
   "ma": "73",
   "ten": "Văn bản ký số: bản A hay B đúng NĐ 30? chữ ký xanh, dấu đè 1/3 bên trái",
   "ngay": "2026-11-15",
@@ -256,23 +356,5 @@ window.BAI_HOC = [
   ],
   "ghim": "Ctrl+H → More → tick Use wildcards.\nLệnh 1 (ngày): tìm  ngày ([1-9]) tháng  thay bằng  ngày 0\\1 tháng  → Replace All.\nLệnh 2 (tháng 1, 2): tìm  tháng ([12]) năm  thay bằng  tháng 0\\1 năm  → Replace All.\nLệnh không đụng ngày 10–31, tháng 3–12. Lệnh phân biệt chữ hoa: chỗ nào viết \"Ngày\" hoa đầu câu thì chạy thêm lệnh tìm  Ngày ([1-9]) tháng  thay  Ngày 0\\1 tháng.\nCăn cứ: điểm b mục 4 Phần II, Phần I, Phụ lục I Nghị định 30/2020/NĐ-CP.",
   "tep": "49-ngay-thang-dung-nd30.docx"
- },
- {
-  "ma": "48",
-  "ten": "Phụ lục đánh số trang riêng theo NĐ 30, bẫy Ctrl+Enter",
-  "ngay": "2026-11-08",
-  "video": "7705636766585244948",
-  "tom_tat": "Đừng để phụ lục đánh số trang tiếp theo công văn nữa! Văn bản hành chính theo Nghị định 30/2020/NĐ-CP: số trang của phụ lục đánh riêng theo từng phụ lục. 2 bước trên Word. Văn bản đúng chuẩn, phần 2.",
-  "loi": [
-   "Đừng để phụ lục đánh số trang tiếp theo công văn nữa anh em, sai thể thức đó!",
-   "Công văn ba trang, phụ lục chạy tiếp bốn, năm, sáu, bảy, nhìn quen mà sai.",
-   "Nghị định 30 ghi rõ: số trang của phụ lục đánh riêng theo từng phụ lục.",
-   "Khoan! Ngắt bằng Ctrl Enter thì chỉnh cách nào cũng ra số bốn!",
-   "Làm nè: đặt chuột trước chữ Phụ lục, vô Layout, Breaks, chọn Next Page.",
-   "Vô Insert, Page Number, Format Page Numbers, chọn Start at 1 là xong!",
-   "Phụ lục đếm lại từ đầu liền! Lưu gấp clip này, phần sau căn lề nha anh em!"
-  ],
-  "ghim": "Đặt chuột ngay trước chữ \"Phụ lục\" → Layout → Breaks → Next Page. Bấm đúp vào số trang ở phụ lục → Insert → Page Number → Format Page Numbers → Start at: 1. Phụ lục II làm lại y vậy. Có từ hai phụ lục thì đánh số La Mã: Phụ lục I, Phụ lục II. Ngắt bằng Ctrl+Enter thì không tách được số trang. Căn cứ: điểm a, điểm đ mục 1 Phần III, Phần I, Phụ lục I Nghị định 30/2020/NĐ-CP.",
-  "tep": "48-phu-luc-so-trang-rieng.docx"
  }
 ];
