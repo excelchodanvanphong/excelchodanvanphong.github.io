@@ -1,6 +1,107 @@
 /* Sinh tự động bằng dong_bo_web.py bai-hoc, không sửa tay. */
 window.BAI_HOC = [
  {
+  "ma": "91",
+  "ten": "Trả lời bình luận: phụ lục đánh số La Mã",
+  "ngay": "2026-11-19",
+  "video": "7709648081855204629",
+  "tom_tat": "",
+  "loi": [
+   "Có anh em hỏi: phụ lục đánh số 1, 2 hay sao cho đúng?",
+   "Nghị định 30 ghi: từ hai phụ lục trở lên đánh số La Mã.",
+   "Tức là Phụ lục I, Phụ lục II, không phải 1, 2.",
+   "Khoan! Chữ Phụ lục và số nằm riêng một dòng, canh giữa, cỡ 14, đậm.",
+   "Hai phụ lục trở lên: số La Mã."
+  ],
+  "ghim": "",
+  "tep": null
+ },
+ {
+  "ma": "90",
+  "ten": "Lỗi 7/30 Kính gửi nhiều nơi: gạch thẳng dưới dấu hai chấm",
+  "ngay": "2026-11-18",
+  "video": "7709475950987054356",
+  "tom_tat": "",
+  "loi": [
+   "Sửa tới sửa lui, vẫn bị trả vì mấy dòng Kính gửi này!",
+   "Gạch đầu dòng thụt ra ngoài chữ Kính gửi, dòng cuối còn chấm phẩy.",
+   "Nghị định 30 ghi: các gạch đầu dòng thẳng hàng dưới dấu hai chấm.",
+   "Khoan! Dòng cuối kết bằng dấu chấm, không phải chấm phẩy.",
+   "Sửa: chọn các dòng, kéo thước lề trái tới ngay dưới dấu hai chấm.",
+   "Gạch đầu dòng thẳng hai chấm."
+  ],
+  "ghim": "",
+  "tep": null
+ },
+ {
+  "ma": "89",
+  "ten": "Lỗi 6/30 Số văn bản dưới 10 thêm 0",
+  "ngay": "2026-11-18",
+  "video": "7709379472906063125",
+  "tom_tat": "",
+  "loi": [
+   "Đầu năm đánh lại số 1, ghi vầy là bị trả!",
+   "Nhiều chỗ ghi “Số: 5” trơn cho gọn.",
+   "Nghị định 30 ghi: số nhỏ hơn 10 phải ghi thêm số 0 phía trước.",
+   "Khoan! Y chang dòng ngày tháng: ngày dưới 10, tháng 1, 2 cũng có số 0.",
+   "Sửa: gõ “Số”, hai chấm, rồi 05.",
+   "Dưới 10, thêm 0."
+  ],
+  "ghim": "",
+  "tep": null
+ },
+ {
+  "ma": "86",
+  "ten": "Lỗi 4/30 Họ tên người ký in thường",
+  "ngay": "2026-11-18",
+  "video": "7709294698556542229",
+  "tom_tat": "",
+  "loi": [
+   "Văn bản trình sếp ký, mà tên sếp gõ in hoa hết!",
+   "Nhiều người gõ hoa cả họ tên cho giống dòng chức vụ.",
+   "Nghị định 30 ghi: chức vụ in hoa; họ tên in thường, đậm.",
+   "Khoan! Họ tên còn phải canh giữa so với chức vụ.",
+   "Sửa: chọn họ tên, bấm nút Aa, chọn Capitalize Each Word.",
+   "Chức vụ in hoa, họ tên in thường."
+  ],
+  "ghim": "",
+  "tep": null
+ },
+ {
+  "ma": "83",
+  "ten": "Lỗi 2/30 Học vị trước tên người ký",
+  "ngay": "2026-11-17",
+  "video": "7709097161211923733",
+  "tom_tat": "",
+  "loi": [
+   "Ghi TS trước tên sếp cho trang trọng, coi chừng bị trả văn bản!",
+   "Nhiều chỗ vẫn ghi TS, ThS trước họ tên người ký.",
+   "Nghị định 30 ghi: trước họ tên người ký không ghi học hàm, học vị.",
+   "Khoan! Trường học, viện, bệnh viện, lực lượng vũ trang thì theo quy định riêng của ngành.",
+   "Văn bản hành chính: xoá học vị, chỉ để họ tên.",
+   "Ký tên, không ký học vị."
+  ],
+  "ghim": "",
+  "tep": null
+ },
+ {
+  "ma": "81",
+  "ten": "Lỗi 1/30 Ký hiệu văn bản: gạch nối không cách chữ",
+  "ngay": "2026-11-17",
+  "video": "7708987484872445205",
+  "tom_tat": "",
+  "loi": [
+   "Cùng một dấu gạch nối: Tiêu ngữ thì cách ra, ký hiệu mà cách ra là sai!",
+   "Nhiều người gõ cách hai bên gạch nối cho thoáng.",
+   "Nghị định 30 ghi: giữa các nhóm chữ viết tắt có gạch nối, không cách chữ.",
+   "Khoan! Tiêu ngữ thì gạch nối có cách chữ, còn ký hiệu thì không.",
+   "Sửa: xoá hai dấu cách, gõ liền.",
+   "Tiêu ngữ cách, ký hiệu liền."
+  ],
+  "ghim": "",
+  "tep": null
+ },
+ {
   "ma": "79",
   "ten": "Báo cáo lên trên có Kính gửi (Soát 5/5), mở đầu dấu TRẢ LẠI",
   "ngay": "2026-11-17",
@@ -208,118 +309,6 @@ window.BAI_HOC = [
   ],
   "ghim": "=TEXT(COUNTIF($A$2:A2,A2),\"00\")&\"/\"&XLOOKUP(B2,$G$2:$G$4,$H$2:$H$4)&\"-\"&A2\nA: đơn vị ban hành (ABC: cơ quan, TCT: Tổ công tác, giả lập), B: loại văn bản, G:H bảng viết tắt. Máy vùng Việt Nam dùng dấu chấm phẩy thay dấu phẩy.\nCăn cứ cũ: Điều 8 khoản 1 Thông tư 01/2011/TT-BNV (hết hiệu lực 15/6/2020). Căn cứ hiện hành: mục II.3 điểm a Phần I Phụ lục I Nghị định 30/2020/NĐ-CP.",
   "tep": "64-so-rieng-to-cong-tac.xlsx"
- },
- {
-  "ma": "61",
-  "ten": "Tiêu đề Mục cỡ 12–13 lên 13–14",
-  "ngay": "2026-11-12",
-  "video": "7707263339608444180",
-  "tom_tat": "Văn bản bố cục theo chương, mục, điều: tiêu đề Mục từ cỡ 12–13 của Thông tư 01/2011/TT-BNV lên cỡ 13–14 theo Nghị định 30/2020/NĐ-CP.",
-  "loi": [
-   "Tiêu đề Mục cỡ 12: thời Thông tư cũ vẫn được, theo Nghị định 30 là thiếu cỡ!",
-   "Văn bản chia chương, mục, điều: cũ 12 đến 13, giờ 13 đến 14.",
-   "Căn cứ: Thông tư 01/2011 đã hết hiệu lực, nay là Phụ lục I Nghị định 30, phần nội dung văn bản.",
-   "Nhớ kỹ! Phần, Chương vẫn như cũ, chỉ Mục là dễ sót.",
-   "Gắn tiêu đề Mục vào một Style, đổi một chỗ, cả văn bản đổi theo.",
-   "Bôi tiêu đề Mục đầu tiên, tạo Style mới.",
-   "Các Mục còn lại bấm vào Style đó.",
-   "Chuột phải Style, Modify, chọn cỡ 14, ba Mục đổi cùng lúc.",
-   "Tiêu đề Mục: cỡ 13 đến 14."
-  ],
-  "ghim": "Căn cứ cũ: Điều 11 khoản 2 Thông tư 01/2011/TT-BNV (hết hiệu lực 15/6/2020). Căn cứ hiện hành: mục II.6 điểm đ Phần I Phụ lục I Nghị định 30/2020/NĐ-CP.\nQuy định cỡ 12–13 cũ áp cho tiêu đề Mục trong văn bản bố cục theo phần, chương, mục, điều.",
-  "tep": "61-tieu-de-muc-co-14.docx"
- },
- {
-  "ma": "59",
-  "ten": "Chữ trong văn bản màu đen, Times New Roman",
-  "ngay": "2026-11-12",
-  "video": "7707136172580998420",
-  "tom_tat": "Nghị định 30/2020/NĐ-CP ghi phông Times New Roman, màu đen; Thông tư 01/2011/TT-BNV chỉ ghi phông Unicode, không nói màu chữ.",
-  "loi": [
-   "Chữ xanh, chữ đỏ trong công văn: Thông tư cũ không ghi màu chữ, Nghị định 30 ghi màu đen!",
-   "Phông cũng chốt luôn: Điều 4 cũ chỉ ghi phông Unicode, giờ ghi rõ Times New Roman.",
-   "Căn cứ: Thông tư 01/2011 đã hết hiệu lực, nay là Phụ lục I Nghị định 30, phần phông chữ.",
-   "Bẫy ở đây! Bôi toàn bộ đổi màu, số trang trên đầu vẫn còn xanh!",
-   "Bôi hai lần là sạch: thân văn bản một lần, đầu trang một lần.",
-   "Ctrl A, Font Color, chọn Automatic.",
-   "Bấm đúp đầu trang, Ctrl A, chọn Automatic lần nữa.",
-   "Liên kết xanh, số đỏ, số trang xanh, đen hết.",
-   "Văn bản hành chính: chữ đen, Times New Roman."
-  ],
-  "ghim": "Căn cứ cũ: Điều 4 Thông tư 01/2011/TT-BNV (hết hiệu lực 15/6/2020). Căn cứ hiện hành: mục I.4 Phần I Phụ lục I Nghị định 30/2020/NĐ-CP.\nQuy định màu đen này là của phông chữ. Hình chữ ký số, hình dấu có quy định màu riêng tại mục II.7, II.8.",
-  "tep": "59-chu-mau-den.docx"
- },
- {
-  "ma": "68",
-  "ten": "Địa danh ghi đủ Thành phố Hồ Chí Minh, AutoCorrect, dòng ngày rớt hai dòng",
-  "ngay": "2026-11-11",
-  "video": "7706770369138396436",
-  "tom_tat": "Đơn vị hành chính đặt theo tên người, bằng chữ số hoặc sự kiện lịch sử thì địa danh trên văn bản phải ghi tên gọi đầy đủ (mục II.4 điểm a Phụ lục I Nghị định 30/2020/NĐ-CP): Thành phố Hồ Chí Minh, không viết TP. HCM.",
-  "loi": [
-   "Đừng viết tắt TP. HCM ở dòng ngày tháng nữa anh em, phải ghi đủ tên!",
-   "Địa danh đặt theo tên người phải ghi tên gọi đầy đủ, từ 2011 chưa đổi.",
-   "Khoan! Chữ Thành phố ở đây viết hoa, thành phố khác viết thường.",
-   "Ghi đủ tên thì rớt hai dòng, nới cột phải lên 11 phân là vừa.",
-   "Vào AutoCorrect, gõ tắt tphcm, thay bằng tên đầy đủ.",
-   "Lần sau gõ tphcm, cách một cái là ra đủ tên."
-  ],
-  "ghim": "Căn cứ cũ: Điều 9 khoản 1 điểm a Thông tư 01/2011/TT-BNV (hết hiệu lực 15/6/2020). Căn cứ hiện hành: mục II.4 điểm a Phần I Phụ lục I; viết hoa đặc biệt \"Thành phố Hồ Chí Minh\" tại mục III.1 điểm c Phụ lục II Nghị định 30/2020/NĐ-CP.\nWord: File > Options > Proofing > AutoCorrect Options, Replace: tphcm, With: Thành phố Hồ Chí Minh > Add. Bảng tiêu đề thử trên Word 2021: cột phải 10,5 cm cỡ 14 rớt hai dòng, 11 cm vừa một dòng.",
-  "tep": null
- },
- {
-  "ma": "58",
-  "ten": "Báo cáo gửi cấp trên phải có Kính gửi",
-  "ngay": "2026-11-11",
-  "video": "7706891328499633429",
-  "tom_tat": "Báo cáo, tờ trình gửi cấp trên phải có Kính gửi theo Nghị định 30/2020/NĐ-CP; Thông tư 01/2011/TT-BNV chỉ quy định dòng này cho công văn.",
-  "loi": [
-   "Soạn báo cáo gửi cấp trên mà thiếu dòng Kính gửi là sai thể thức đó anh em!",
-   "Thông tư cũ chỉ bắt công văn có Kính gửi. Nghị định 30 thêm tờ trình và báo cáo gửi cấp trên.",
-   "Căn cứ: Thông tư 01/2011 đã hết hiệu lực, nay là Phụ lục I Nghị định 30, phần Nơi nhận.",
-   "Lưu ý! Báo cáo gửi cấp dưới không thuộc trường hợp này.",
-   "Gửi nhiều nơi thì gạch đầu dòng phải thẳng hàng dưới dấu hai chấm.",
-   "Gõ Kính gửi, hai chấm, rồi mỗi nơi một dòng.",
-   "Bôi các dòng đó, chữ cỡ 14 thì lùi thêm 1,75 xen ti mét.",
-   "Cuối mỗi dòng chấm phẩy, dòng cuối dấu chấm.",
-   "Gửi lên cấp trên, nhớ có Kính gửi."
-  ],
-  "ghim": "Căn cứ cũ: Điều 14 Thông tư 01/2011/TT-BNV (hết hiệu lực 15/6/2020). Căn cứ hiện hành: mục II.9 điểm b và d Phần I Phụ lục I Nghị định 30/2020/NĐ-CP.\nCỡ chữ 14, Times New Roman: các dòng gạch đầu dòng lùi thêm 1,75 cm so với chữ Kính gửi. Cỡ chữ khác thì số lùi khác. Mẫu 1.4 không vẽ dòng này, nhưng mục II.9 điểm b quy định rõ.",
-  "tep": "58-kinh-gui-bao-cao.docx"
- },
- {
-  "ma": "67",
-  "ten": "Dòng ngày tháng nghiêng, canh theo Quốc hiệu, cùng dòng số ký hiệu",
-  "ngay": "2026-11-10",
-  "video": "7706526687093198100",
-  "tom_tat": "Dòng địa danh, ngày tháng phải in nghiêng, sau địa danh có dấu phẩy, cùng dòng với số ký hiệu, canh giữa theo Quốc hiệu và Tiêu ngữ (mục II.4 điểm c Phụ lục I Nghị định 30/2020/NĐ-CP). Nối tiếp video ngày tháng thiếu số 0.",
-  "loi": [
-   "Đừng có canh dòng ngày tháng giữa trang nữa anh em, lệch Quốc hiệu hơn 3 cm đó!",
-   "Luật cũ, luật mới đều vậy: nghiêng, có dấu phẩy, ngang dòng số ký hiệu.",
-   "Khoan! Đo thật trên Word: lệch đúng 32,6 mi li mét.",
-   "Nghị định 30 bắt canh giữa theo Quốc hiệu và Tiêu ngữ.",
-   "Đưa dòng ngày vào ô dưới Tiêu ngữ, ngang dòng Số, bấm Ctrl E.",
-   "Bấm Ctrl I cho nghiêng, thêm dấu phẩy sau địa danh là xong."
-  ],
-  "ghim": "Căn cứ cũ: Điều 9 khoản 2 Thông tư 01/2011/TT-BNV (hết hiệu lực 15/6/2020): canh giữa dưới Quốc hiệu. Căn cứ hiện hành: mục II.4 điểm c Phần I Phụ lục I Nghị định 30/2020/NĐ-CP: canh giữa so với Quốc hiệu và Tiêu ngữ; cỡ 13–14, chữ nghiêng, chữ cái đầu của địa danh viết hoa, sau địa danh có dấu phẩy.\nĐo trên Word 2021: dòng ngày canh giữa cả trang lệch tâm Quốc hiệu 32,6 mm; đặt vào ô dưới Tiêu ngữ thì lệch 0 mm.",
-  "tep": null
- },
- {
-  "ma": "57",
-  "ten": "Căn cứ ban hành: dấu phẩy thành dấu chấm",
-  "ngay": "2026-11-10",
-  "video": "7706392682968485140",
-  "tom_tat": "Dòng căn cứ cuối: Thông tư 01/2011/TT-BNV kết bằng dấu phẩy, Nghị định 30/2020/NĐ-CP kết bằng dấu chấm và căn cứ in nghiêng.",
-  "loi": [
-   "Dòng căn cứ cuối của quyết định: Thông tư cũ kết bằng dấu phẩy, Nghị định 30 đổi thành dấu chấm!",
-   "Chưa hết: Thông tư cũ không ghi chữ nghiêng, giờ căn cứ phải in nghiêng.",
-   "Khoan! Mẫu soạn từ hồi đó chưa sửa thì vẫn còn dấu phẩy.",
-   "Đừng sửa tay từng lần. Tạo một Style tên Căn cứ, lần sau bấm một cái.",
-   "Bôi một dòng căn cứ, bấm Ctrl I, rồi lưu thành Style mới.",
-   "Các dòng căn cứ còn lại, bấm vào Style vừa tạo.",
-   "Dòng cuối đổi dấu phẩy thành dấu chấm là xong."
-  ],
-  "ghim": "Căn cứ cũ: Điều 11 khoản 2 Thông tư 01/2011/TT-BNV (hết hiệu lực 15/6/2020). Căn cứ hiện hành: mục II.6 điểm a Phần I Phụ lục I Nghị định 30/2020/NĐ-CP.\nCách làm: bôi một dòng căn cứ, Ctrl + I, tạo Style mới; các dòng khác bấm Style đó; dòng cuối đổi thành dấu chấm.",
-  "tep": null
  },
  {
   "ma": "56",
