@@ -1,6 +1,90 @@
 /* Sinh tự động bằng dong_bo_web.py bai-hoc, không sửa tay. */
 window.BAI_HOC = [
  {
+  "ma": "100",
+  "ten": "Lỗi 16/30 Điểm a) có dấu đóng ngoặc",
+  "ngay": "2026-11-21",
+  "video": "7710385998672170260",
+  "tom_tat": "",
+  "loi": [
+   "Cùng là đánh thứ tự: khoản thì 1 chấm, điểm mà a gạch chéo là SAI!",
+   "Nhiều người quen ghi a gạch chéo, a chấm, nhìn cũng gọn mắt.",
+   "Nghị định 30 ghi: điểm dùng chữ cái, sau có dấu đóng ngoặc đơn.",
+   "Khoan! Sau d là đ, sau e là g. Bảng chữ cái tiếng Việt không có chữ f nha.",
+   "Sửa: thay gạch chéo bằng dấu đóng ngoặc: a), b), chữ thường, không in đậm."
+  ],
+  "ghim": "",
+  "tep": null
+ },
+ {
+  "ma": "97",
+  "ten": "Lỗi 24/30 Ký hiệu công văn không ghi CV",
+  "ngay": "2026-11-20",
+  "video": "7710195802592824596",
+  "tom_tat": "",
+  "loi": [
+   "Số công văn có chữ CV? Sai quy định rồi anh em!",
+   "Thấy quyết định có QĐ, nhiều người nghĩ công văn phải có CV.",
+   "Nghị định 30 ghi: ký hiệu công văn gồm chữ tắt tên cơ quan và đơn vị soạn thảo.",
+   "Khoan! Chỉ quyết định, tờ trình mới có tên loại; công văn thì không.",
+   "Sửa: xoá CV, thêm đơn vị soạn: SMH-VP.",
+   "Công văn: cơ quan, gạch nối, đơn vị soạn."
+  ],
+  "ghim": "",
+  "tep": null
+ },
+ {
+  "ma": "95",
+  "ten": "Lỗi 10/30 Nơi nhận: dòng Lưu: VT, đơn vị.",
+  "ngay": "2026-11-20",
+  "video": "7710006572252007700",
+  "tom_tat": "",
+  "loi": [
+   "Phần Nơi nhận nhìn thì gọn, nhưng dòng cuối cùng này đang sai!",
+   "Nhiều người ghi Lưu VT chấm phẩy, cả khối cỡ 14 như thân bài.",
+   "Nghị định 30 ghi: dòng Lưu có hai chấm, chữ VT, dấu phẩy, tên đơn vị soạn thảo, cuối cùng dấu chấm.",
+   "Khoan! Chữ Nơi nhận cỡ 12, nghiêng đậm; danh sách chỉ cỡ 11.",
+   "Sửa thành “Lưu: VT, VP.”, cả khối thu về cỡ 12 và 11.",
+   "Lưu, hai chấm, VT, phẩy, đơn vị, chấm."
+  ],
+  "ghim": "",
+  "tep": null
+ },
+ {
+  "ma": "93",
+  "ten": "Lỗi 9/30 Địa danh ngày tháng nghiêng, có dấu phẩy",
+  "ngay": "2026-11-20",
+  "video": "7710103688789937428",
+  "tom_tat": "",
+  "loi": [
+   "Dòng ngày tháng này nhìn quen mắt, nhưng thiếu mất hai chi tiết!",
+   "Chữ đứng, và sau địa danh không có dấu phẩy.",
+   "Nghị định 30 ghi: chữ nghiêng, sau địa danh có dấu phẩy.",
+   "Khoan! Ngày dưới 10, tháng 1, 2 vẫn phải có số 0 như video trước.",
+   "Sửa: chọn dòng, Ctrl I, thêm dấu phẩy sau địa danh.",
+   "Ngày tháng nghiêng, địa danh có phẩy."
+  ],
+  "ghim": "",
+  "tep": null
+ },
+ {
+  "ma": "92",
+  "ten": "Lỗi 8/30 Phụ lục: dòng Kèm theo văn bản số",
+  "ngay": "2026-11-19",
+  "video": "7709833301774617877",
+  "tom_tat": "",
+  "loi": [
+   "Phụ lục bỏ trống dòng này: bản giấy là thiếu, bản điện tử lại đúng!",
+   "Nhiều phụ lục chỉ có tên, thiếu dòng Kèm theo văn bản số, ngày.",
+   "Nghị định 30 ghi: dòng chỉ dẫn canh giữa dưới tên phụ lục, chữ nghiêng.",
+   "Khoan! Văn bản giấy ghi đủ, còn văn bản điện tử thì không phải điền.",
+   "Sửa: gõ dòng Kèm theo dưới tên phụ lục, Ctrl E canh giữa, Ctrl I in nghiêng.",
+   "Giấy ghi đủ, điện tử để trống."
+  ],
+  "ghim": "",
+  "tep": null
+ },
+ {
   "ma": "91",
   "ten": "Trả lời bình luận: phụ lục đánh số La Mã",
   "ngay": "2026-11-19",
@@ -271,44 +355,6 @@ window.BAI_HOC = [
   ],
   "ghim": "Căn cứ hiện hành: mục II.7 điểm b, đ Phần I Phụ lục I Nghị định 30/2020/NĐ-CP: TM. thay mặt tập thể; Q. được giao quyền cấp trưởng; KT. ký thay người đứng đầu, cấp phó được giao phụ trách hoặc điều hành cũng ký như KT.; TL. thừa lệnh; TUQ. thừa ủy quyền. Chữ viết tắt và chức vụ: in hoa, cỡ 13–14, đứng, đậm.\nCăn cứ cũ: Điều 12 khoản 1 Thông tư 01/2011/TT-BNV (hết hiệu lực 15/6/2020): chỉ nêu cấp phó được giao phụ trách; Q. Giám đốc ghi như một chức vụ.\nĐáp án câu hỏi: A.",
   "tep": null
- },
- {
-  "ma": "69",
-  "ten": "Soi báo cáo: 5 chỗ còn theo TT 01/2011, sửa theo NĐ 30",
-  "ngay": "2026-11-13",
-  "video": "7707625742942702869",
-  "tom_tat": "Báo cáo còn làm theo Thông tư 01/2011/TT-BNV (hết hiệu lực 15/6/2020)? Soát 5 chỗ theo Phụ lục I Nghị định 30/2020/NĐ-CP: màu chữ, phông, cách dòng, Kính gửi, số trang. Bảng kiểm ở link hồ sơ. Văn bản đúng chuẩn, tổng hợp.",
-  "loi": [
-   "Còn sửa lại mẫu báo cáo cũ là dính đủ năm lỗi này nè anh em!",
-   "Giờ theo Nghị định 30 rồi nha, một là chữ xanh phải về màu đen.",
-   "Hai, phông Arial đổi sang Times New Roman.",
-   "Ba, bỏ cách dòng cố định 15 điểm, chọn từ dòng đơn tới một rưỡi.",
-   "Bốn, báo cáo gửi cấp trên phải có dòng Kính gửi.",
-   "Khoan! Chỗ thứ năm nằm tận trang hai, số trang góc phải dưới chân là sai.",
-   "Page Number, gỡ số cũ trước, rồi Top of Page chọn số giữa, tick Different First Page.",
-   "Khuôn cũ thì lỗi cũ, chụp bảng này lại kiểm cho chắc."
-  ],
-  "ghim": "Bảng kiểm theo Phụ lục I NĐ 30/2020/NĐ-CP: 1) chữ màu đen, 2) Times New Roman (mục I.4); 3) cách dòng từ dòng đơn tới 1,5 lines, bỏ 15pt Exactly (mục II.6 điểm e); 4) báo cáo, tờ trình gửi cấp trên có Kính gửi (mục II.9 điểm b); 5) số trang giữa lề trên, trang 1 không số (mục I.7).\nSố trang: Insert > Page Number > Remove Page Numbers, rồi Top of Page > Plain Number 2, tick Different First Page.\nQuy định cũ: Thông tư 01/2011/TT-BNV, hết hiệu lực 15/6/2020.",
-  "tep": "69-bang-kiem-the-thuc-bao-cao.pdf"
- },
- {
-  "ma": "64",
-  "ten": "Tổ công tác ban hành văn bản: hệ thống số riêng",
-  "ngay": "2026-11-13",
-  "video": "7707504831501569281",
-  "tom_tat": "Nghị định 30/2020/NĐ-CP: Hội đồng, Ban, Tổ được ghi là cơ quan ban hành và dùng con dấu, chữ ký số của cơ quan thì phải lấy hệ thống số riêng; Thông tư 01/2011/TT-BNV chỉ nêu Hội đồng, Ban tư vấn. Excel đánh số riêng từng dãy.",
-  "loi": [
-   "Tổ công tác ban hành văn bản mà dùng chung dãy số với cơ quan là sai đó anh em!",
-   "Thông tư cũ chỉ nêu Hội đồng, Ban. Nghị định 30 thêm cả Tổ.",
-   "Căn cứ: Thông tư 01/2011 đã hết hiệu lực, nay là Phụ lục I Nghị định 30, phần Số, ký hiệu.",
-   "Khoan! Điều kiện: Tổ đứng tên ban hành, dùng con dấu, chữ ký số của cơ quan.",
-   "Để Excel đếm riêng: cơ quan một dãy, Tổ một dãy.",
-   "Gõ công thức như trên hình, nhớ khóa ô đầu bằng đô la.",
-   "Kéo xuống: Tổ công tác đi số 01, 02, 03 riêng.",
-   "Tổ đứng tên ban hành: số riêng."
-  ],
-  "ghim": "=TEXT(COUNTIF($A$2:A2,A2),\"00\")&\"/\"&XLOOKUP(B2,$G$2:$G$4,$H$2:$H$4)&\"-\"&A2\nA: đơn vị ban hành (ABC: cơ quan, TCT: Tổ công tác, giả lập), B: loại văn bản, G:H bảng viết tắt. Máy vùng Việt Nam dùng dấu chấm phẩy thay dấu phẩy.\nCăn cứ cũ: Điều 8 khoản 1 Thông tư 01/2011/TT-BNV (hết hiệu lực 15/6/2020). Căn cứ hiện hành: mục II.3 điểm a Phần I Phụ lục I Nghị định 30/2020/NĐ-CP.",
-  "tep": "64-so-rieng-to-cong-tac.xlsx"
  },
  {
   "ma": "56",
