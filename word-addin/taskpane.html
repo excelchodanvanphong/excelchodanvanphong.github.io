@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><title>Văn bản chuẩn NĐ30</title>
+<script>
+/* Mở đúng bản người dùng đã chọn. Bản mới chỉ dùng khi người dùng bấm "Nâng cấp" trong add-in. */
+(function () {
+  var MAC_DINH = "1.0.0", v = null;
+  try { v = localStorage.getItem("nd30_phien_ban"); } catch (e) {}
+  if (!/^\d+\.\d+\.\d+$/.test(v || "")) v = MAC_DINH;
+  location.replace("v/" + v + "/app.html");
+})();
+</script></head><body>Đang mở…</body></html>

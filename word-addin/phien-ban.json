@@ -1,0 +1,22 @@
+{
+  "moi_nhat": "1.0.0",
+  "ngay": "2026-11-25",
+  "noi_dung": [
+    "Soát thể thức văn bản theo Phụ lục I Nghị định 30/2020/NĐ-CP, bấm vào lỗi để nhảy tới chỗ sai.",
+    "Sửa nhanh một chạm: phông, cỡ chữ, canh đều, lùi đầu dòng, giãn dòng, cách đoạn, khổ A4, lề 2-2-3-2.",
+    "Tạo văn bản mới từ 5 khuôn: công văn, báo cáo, tờ trình, kế hoạch, quyết định.",
+    "Chèn khối tiêu đề và khối nơi nhận, chữ ký."
+  ],
+  "cac_ban": [
+    {
+      "phien_ban": "1.0.0",
+      "ngay": "2026-11-25",
+      "noi_dung": [
+        "Soát thể thức văn bản theo Phụ lục I Nghị định 30/2020/NĐ-CP, bấm vào lỗi để nhảy tới chỗ sai.",
+        "Sửa nhanh một chạm: phông, cỡ chữ, canh đều, lùi đầu dòng, giãn dòng, cách đoạn, khổ A4, lề 2-2-3-2.",
+        "Tạo văn bản mới từ 5 khuôn: công văn, báo cáo, tờ trình, kế hoạch, quyết định.",
+        "Chèn khối tiêu đề và khối nơi nhận, chữ ký."
+      ]
+    }
+  ]
+}
