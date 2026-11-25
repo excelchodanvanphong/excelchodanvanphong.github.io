@@ -1,13 +1,21 @@
 {
-  "moi_nhat": "1.0.0",
+  "moi_nhat": "1.1.0",
   "ngay": "2026-11-25",
   "noi_dung": [
-    "Soát thể thức văn bản theo Phụ lục I Nghị định 30/2020/NĐ-CP, bấm vào lỗi để nhảy tới chỗ sai.",
-    "Sửa nhanh một chạm: phông, cỡ chữ, canh đều, lùi đầu dòng, giãn dòng, cách đoạn, khổ A4, lề 2-2-3-2.",
-    "Tạo văn bản mới từ 5 khuôn: công văn, báo cáo, tờ trình, kế hoạch, quyết định.",
-    "Chèn khối tiêu đề và khối nơi nhận, chữ ký."
+    "Thẻ mới Dựng: gõ phần nội dung, add-in tự thêm Quốc hiệu, Tiêu ngữ, số, ngày tháng, Kính gửi, khối nơi nhận và chữ ký theo hồ sơ cơ quan, rồi chuẩn hóa định dạng ngay trên văn bản đang mở.",
+    "Chạy được trên Word 2016 và Word 2019.",
+    "Trên Word chưa mở được cửa sổ mới, Sửa nhanh và Khuôn hỏi trước khi thay nội dung văn bản đang mở."
   ],
   "cac_ban": [
+    {
+      "phien_ban": "1.1.0",
+      "ngay": "2026-11-25",
+      "noi_dung": [
+        "Thẻ mới Dựng: gõ phần nội dung, add-in tự thêm Quốc hiệu, Tiêu ngữ, số, ngày tháng, Kính gửi, khối nơi nhận và chữ ký theo hồ sơ cơ quan, rồi chuẩn hóa định dạng ngay trên văn bản đang mở.",
+        "Chạy được trên Word 2016 và Word 2019.",
+        "Trên Word chưa mở được cửa sổ mới, Sửa nhanh và Khuôn hỏi trước khi thay nội dung văn bản đang mở."
+      ]
+    },
     {
       "phien_ban": "1.0.0",
       "ngay": "2026-11-25",

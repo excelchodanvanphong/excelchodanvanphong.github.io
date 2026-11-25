@@ -3,9 +3,13 @@
 <script>
 /* Mở đúng bản người dùng đã chọn. Bản mới chỉ dùng khi người dùng bấm "Nâng cấp" trong add-in. */
 (function () {
-  var MAC_DINH = "1.0.0", v = null;
+  var MAC_DINH = "1.1.0", CU_TOI_THIEU = "1.1.0", v = null;
   try { v = localStorage.getItem("nd30_phien_ban"); } catch (e) {}
   if (!/^\d+\.\d+\.\d+$/.test(v || "")) v = MAC_DINH;
-  location.replace("v/" + v + "/app.html");
+  /* Word 2016, 2019 mở add-in bằng Internet Explorer 11: dùng bản "cu" (có từ CU_TOI_THIEU). */
+  var cu = !window.DecompressionStream || !window.CompressionStream || !(window.crypto && window.crypto.subtle);
+  function so(a) { a = a.split("."); return (+a[0]) * 1e6 + (+a[1]) * 1e3 + (+a[2]); }
+  if (cu && so(v) < so(CU_TOI_THIEU)) v = CU_TOI_THIEU;
+  location.replace("v/" + v + (cu ? "/cu/app.html" : "/app.html"));
 })();
 </script></head><body>Đang mở…</body></html>
