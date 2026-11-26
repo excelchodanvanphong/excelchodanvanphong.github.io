@@ -3,7 +3,7 @@
 <script>
 /* Mở đúng bản người dùng đã chọn. Bản mới chỉ dùng khi người dùng bấm "Nâng cấp" trong add-in. */
 (function () {
-  var MAC_DINH = "1.1.3", CU_TOI_THIEU = "1.1.0", v = null;
+  var MAC_DINH = "1.1.4", CU_TOI_THIEU = "1.1.0", v = null;
   try { v = localStorage.getItem("nd30_phien_ban"); } catch (e) {}
   if (!/^\d+\.\d+\.\d+$/.test(v || "")) v = MAC_DINH;
   /* Word 2016, 2019 mở add-in bằng Internet Explorer 11: dùng bản "cu" (có từ CU_TOI_THIEU). */

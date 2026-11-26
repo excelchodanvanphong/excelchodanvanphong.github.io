@@ -1,12 +1,21 @@
 {
-  "moi_nhat": "1.1.3",
+  "moi_nhat": "1.1.4",
   "ngay": "2026-11-26",
   "noi_dung": [
-    "Thẻ Dựng nhận cả phụ lục không ghi chữ \"Phụ lục\", chỉ có tên (ví dụ DANH SÁCH …) và dòng (Kèm theo …): thêm dòng \"Phụ lục\", đưa sang trang mới, số trang đánh lại từ 1, bỏ các dòng trống dồn phía trước.",
-    "Đọc đúng khối chữ ký xuống dòng bằng Shift + Enter (KT. GIÁM ĐỐC / PHÓ GIÁM ĐỐC) và khối chữ ký không còn bị nhận nhầm khi phía sau có bảng phụ lục.",
-    "Dòng (Kèm theo …) giữ nguyên khoảng trống chờ điền số, ngày."
+    "Thẻ Dựng: khối căn cứ ở đầu nội dung (tờ trình, quyết định, nghị quyết…) in nghiêng; các dòng căn cứ phía trên kết thúc bằng dấu chấm phẩy.",
+    "Dòng (Kèm theo …) của phụ lục ghi tên cơ quan ban hành viết đúng hoa thường (SỞ NỘI VỤ → Sở Nội vụ); tên cơ quan add-in không tự viết được thì để ..... để điền.",
+    "Thêm loại văn bản Nghị quyết (NQ) ở thẻ Dựng và thẻ Khối."
   ],
   "cac_ban": [
+    {
+      "phien_ban": "1.1.4",
+      "ngay": "2026-11-26",
+      "noi_dung": [
+        "Thẻ Dựng: khối căn cứ ở đầu nội dung (tờ trình, quyết định, nghị quyết…) in nghiêng; các dòng căn cứ phía trên kết thúc bằng dấu chấm phẩy.",
+        "Dòng (Kèm theo …) của phụ lục ghi tên cơ quan ban hành viết đúng hoa thường (SỞ NỘI VỤ → Sở Nội vụ); tên cơ quan add-in không tự viết được thì để ..... để điền.",
+        "Thêm loại văn bản Nghị quyết (NQ) ở thẻ Dựng và thẻ Khối."
+      ]
+    },
     {
       "phien_ban": "1.1.3",
       "ngay": "2026-11-26",
