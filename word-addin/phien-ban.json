@@ -1,12 +1,21 @@
 {
-  "moi_nhat": "1.1.2",
+  "moi_nhat": "1.1.3",
   "ngay": "2026-11-26",
   "noi_dung": [
-    "Thẻ Dựng chuẩn hóa cả phụ lục sau khối chữ ký: mỗi phụ lục sang trang mới, số trang đánh lại từ 1; từ hai phụ lục trở lên đánh số La Mã.",
-    "Dòng \"Phụ lục\" in thường cỡ 14 đậm, tên phụ lục in hoa cỡ 14 đậm, dòng \"(Kèm theo …)\" cỡ 14 nghiêng, đều canh giữa; thiếu dòng Kèm theo thì add-in thêm, để trống số, ngày chờ văn thư.",
-    "Nhận ra phụ lục ghi chữ thường (\"Phụ lục I\") chứ không chỉ \"PHỤ LỤC\"."
+    "Thẻ Dựng nhận cả phụ lục không ghi chữ \"Phụ lục\", chỉ có tên (ví dụ DANH SÁCH …) và dòng (Kèm theo …): thêm dòng \"Phụ lục\", đưa sang trang mới, số trang đánh lại từ 1, bỏ các dòng trống dồn phía trước.",
+    "Đọc đúng khối chữ ký xuống dòng bằng Shift + Enter (KT. GIÁM ĐỐC / PHÓ GIÁM ĐỐC) và khối chữ ký không còn bị nhận nhầm khi phía sau có bảng phụ lục.",
+    "Dòng (Kèm theo …) giữ nguyên khoảng trống chờ điền số, ngày."
   ],
   "cac_ban": [
+    {
+      "phien_ban": "1.1.3",
+      "ngay": "2026-11-26",
+      "noi_dung": [
+        "Thẻ Dựng nhận cả phụ lục không ghi chữ \"Phụ lục\", chỉ có tên (ví dụ DANH SÁCH …) và dòng (Kèm theo …): thêm dòng \"Phụ lục\", đưa sang trang mới, số trang đánh lại từ 1, bỏ các dòng trống dồn phía trước.",
+        "Đọc đúng khối chữ ký xuống dòng bằng Shift + Enter (KT. GIÁM ĐỐC / PHÓ GIÁM ĐỐC) và khối chữ ký không còn bị nhận nhầm khi phía sau có bảng phụ lục.",
+        "Dòng (Kèm theo …) giữ nguyên khoảng trống chờ điền số, ngày."
+      ]
+    },
     {
       "phien_ban": "1.1.2",
       "ngay": "2026-11-26",

@@ -1,0 +1,67 @@
+
+* { box-sizing: border-box; }
+body { margin: 0; font: 13px/1.45 "Segoe UI", Tahoma, sans-serif; color: #1f1f1f; background: #ffffff; }
+[hidden] { display: none !important; }
+.dau { background: #185abd; color: #fff; padding: 10px 12px; }
+.dau .ten { font-size: 15px; font-weight: 600; }
+.dau .phu { font-size: 11px; opacity: .85; }
+section { padding: 10px 12px 16px; }
+h2 { font-size: 15px; margin: 4px 0 8px; }
+.giua { padding: 24px 12px; text-align: center; color: #5f6368; }
+.ghi { color: #5f6368; font-size: 12px; margin: 4px 0 8px; }
+label { display: block; margin: 8px 0 2px; font-size: 12px; color: #333; }
+label.ngang { display: inline-flex; align-items: center; gap: 4px; margin: 4px 10px 4px 0; }
+input:not([type=checkbox]):not([type=radio]), select, textarea {
+  display: block; width: 100%; margin-top: 3px; padding: 6px 8px; font: inherit;
+  border: 1px solid #d6d6d6; border-radius: 4px; background: #fff;
+}
+input:focus, select:focus, textarea:focus { outline: 2px solid #185abd; outline-offset: -1px; border-color: #185abd; }
+#o-ma { font-family: Consolas, monospace; font-size: 14px; letter-spacing: .5px; text-transform: uppercase; }
+button { font: inherit; padding: 6px 12px; border: 1px solid #d6d6d6; border-radius: 4px; background: #fff; cursor: pointer; }
+button:hover { background: #f5f5f5; }
+button:disabled { opacity: .6; cursor: default; }
+button.chinh { background: #185abd; border-color: #185abd; color: #fff; font-weight: 600; }
+button.chinh:hover { background: #124a9c; }
+button.rong { display: block; width: 100%; margin: 10px 0; }
+button.nho { padding: 2px 8px; font-size: 12px; }
+button.lien-ket { border: 0; background: none; color: #185abd; padding: 0; text-decoration: underline; }
+.hang-nut { display: flex; gap: 8px; margin-top: 8px; }
+.hop-nho { margin-top: 14px; padding: 8px; background: #f5f5f5; border-radius: 4px; font-size: 12px; }
+
+.bang-nang-cap { margin: 8px 12px 0; padding: 10px; background: #fff8e1; border: 1px solid #f0c36d; border-radius: 4px; }
+.bang-nang-cap .tieu { font-weight: 600; }
+.bang-nang-cap ul { margin: 6px 0 0 18px; padding: 0; font-size: 12px; }
+.dai-dung-thu { margin: -10px -12px 8px; padding: 6px 12px; background: #e8f0fb; font-size: 12px; }
+
+nav.the { display: flex; border-bottom: 1px solid #d6d6d6; margin: 0 -12px 8px; padding: 0 8px; }
+nav.the button { border: 0; border-bottom: 3px solid transparent; border-radius: 0; background: none; padding: 8px 2px 6px; color: #5f6368; flex: 1 1 auto; white-space: nowrap; font-size: 12.5px; }
+nav.the button.dang-chon { color: #185abd; border-bottom-color: #185abd; font-weight: 600; }
+.chon label { display: flex; gap: 6px; align-items: flex-start; margin: 6px 0; }
+.vi-tri { margin-top: 8px; font-size: 12px; }
+
+.thong-bao { margin: 10px 0; padding: 8px 10px; border-radius: 4px; border-left: 4px solid #185abd; background: #e8f0fb; }
+.thong-bao.loi { border-color: #c42b1c; background: #fdecea; }
+.thong-bao.canh-bao { border-color: #b65c00; background: #fff4e5; }
+.thong-bao.dat { border-color: #107c10; background: #eaf5ea; }
+.thong-bao ul { margin: 4px 0 4px 18px; padding: 0; }
+.thong-bao p { margin: 4px 0; }
+
+.tom-tat { margin: 10px 0; display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; }
+.tom-tat .so { display: inline-block; min-width: 24px; padding: 1px 6px; border-radius: 10px; color: #fff; text-align: center; font-weight: 600; }
+.so.loi { background: #c42b1c; } .so.canh-bao { background: #b65c00; } .so.goi-y { background: #185abd; } .so.dat { background: #107c10; }
+details.nhom { margin: 8px 0; }
+details > summary { cursor: pointer; font-weight: 600; padding: 4px 0; }
+.muc { margin: 6px 0; padding: 8px; border: 1px solid #d6d6d6; border-left-width: 4px; border-radius: 4px; }
+.muc.loi { border-left-color: #c42b1c; } .muc.canh-bao { border-left-color: #b65c00; } .muc.goi-y { border-left-color: #185abd; } .muc.dat { border-left-color: #107c10; }
+.muc .tieu { font-weight: 600; margin-bottom: 2px; }
+.muc .sua { margin-top: 4px; }
+.muc .can-cu { margin-top: 4px; font-size: 11px; color: #5f6368; }
+button.vi-du { display: block; width: 100%; text-align: left; margin-top: 4px; padding: 4px 6px; font-size: 12px; background: #f5f5f5; border-color: transparent; }
+button.vi-du:hover { border-color: #185abd; }
+
+.khuon { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 8px 0; border-bottom: 1px solid #f5f5f5; }
+.chan { margin-top: 18px; border-top: 1px solid #d6d6d6; padding-top: 6px; font-size: 12px; }
+.chan summary { font-weight: 400; color: #5f6368; }
+
+details, summary { display: block; }
+details:not([open]) > *:not(summary) { display: none !important; }
