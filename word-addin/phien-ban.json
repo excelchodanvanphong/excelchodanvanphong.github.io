@@ -1,12 +1,21 @@
 {
-  "moi_nhat": "1.1.4",
+  "moi_nhat": "1.1.5",
   "ngay": "2026-11-26",
   "noi_dung": [
-    "Thẻ Dựng: khối căn cứ ở đầu nội dung (tờ trình, quyết định, nghị quyết…) in nghiêng; các dòng căn cứ phía trên kết thúc bằng dấu chấm phẩy.",
-    "Dòng (Kèm theo …) của phụ lục ghi tên cơ quan ban hành viết đúng hoa thường (SỞ NỘI VỤ → Sở Nội vụ); tên cơ quan add-in không tự viết được thì để ..... để điền.",
-    "Thêm loại văn bản Nghị quyết (NQ) ở thẻ Dựng và thẻ Khối."
+    "Khối đầu văn bản: tên cơ quan chủ quản, cơ quan ban hành dài thì cột bên trái tự nới rộng để không bị rớt dòng (Quốc hiệu, Tiêu ngữ vẫn đủ chỗ); tên quá dài thì xuống dòng thành các dòng dài gần bằng nhau.",
+    "Quyết định, nghị quyết: dựng dòng thẩm quyền ban hành (ví dụ GIÁM ĐỐC SỞ NỘI VỤ) in hoa đậm canh giữa; dòng \"Theo đề nghị của…\" in nghiêng cùng khối căn cứ, khối căn cứ kết thúc bằng dấu chấm; dòng \"QUYẾT ĐỊNH:\" (\"QUYẾT NGHỊ:\") in hoa đậm canh giữa.",
+    "Thẻ Dựng có thêm ô Thẩm quyền ban hành khi chọn Quyết định hoặc Nghị quyết, tự điền từ văn bản hoặc từ hồ sơ cơ quan."
   ],
   "cac_ban": [
+    {
+      "phien_ban": "1.1.5",
+      "ngay": "2026-11-26",
+      "noi_dung": [
+        "Khối đầu văn bản: tên cơ quan chủ quản, cơ quan ban hành dài thì cột bên trái tự nới rộng để không bị rớt dòng (Quốc hiệu, Tiêu ngữ vẫn đủ chỗ); tên quá dài thì xuống dòng thành các dòng dài gần bằng nhau.",
+        "Quyết định, nghị quyết: dựng dòng thẩm quyền ban hành (ví dụ GIÁM ĐỐC SỞ NỘI VỤ) in hoa đậm canh giữa; dòng \"Theo đề nghị của…\" in nghiêng cùng khối căn cứ, khối căn cứ kết thúc bằng dấu chấm; dòng \"QUYẾT ĐỊNH:\" (\"QUYẾT NGHỊ:\") in hoa đậm canh giữa.",
+        "Thẻ Dựng có thêm ô Thẩm quyền ban hành khi chọn Quyết định hoặc Nghị quyết, tự điền từ văn bản hoặc từ hồ sơ cơ quan."
+      ]
+    },
     {
       "phien_ban": "1.1.4",
       "ngay": "2026-11-26",

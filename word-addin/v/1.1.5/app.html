@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Văn bản chuẩn NĐ30</title>
+  <link rel="stylesheet" href="app.css">
+  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  <script src="cau-hinh.js"></script>
+  <script src="zip.js"></script>
+  <script src="soat-van-ban.js"></script>
+  <script src="sua-nhanh.js"></script>
+  <script src="khoi.js"></script>
+  <script src="dung-vb.js"></script>
+  <script src="khuon-du-lieu.js"></script>
+  <script src="giay-phep.js"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+  <header class="dau">
+    <div class="ten">Văn bản chuẩn NĐ30</div>
+    <div class="phu" id="dong-phien-ban"></div>
+  </header>
+
+  <div id="bang-nang-cap" class="bang-nang-cap" hidden>
+    <div class="tieu">Có phiên bản mới <b id="nc-phien-ban"></b></div>
+    <ul id="nc-noi-dung"></ul>
+    <div class="hang-nut">
+      <button id="nut-nang-cap" class="chinh">Nâng cấp</button>
+      <button id="nut-de-sau">Để sau</button>
+    </div>
+  </div>
+
+  <div id="dang-tai" class="giua">Đang kiểm tra giấy phép…</div>
+
+  <!-- ===================================================== kích hoạt -->
+  <section id="man-kich-hoat" hidden>
+    <h2>Kích hoạt</h2>
+    <p id="kh-ly-do" class="ghi"></p>
+    <label for="o-ma">Mã kích hoạt</label>
+    <input id="o-ma" autocomplete="off" spellcheck="false" placeholder="DT-XXXX-XXXX-XXXX">
+    <button id="nut-kich-hoat" class="chinh rong">Kích hoạt</button>
+    <p id="kh-thong-bao" class="thong-bao" hidden></p>
+    <div class="hop-nho">
+      <div>Mã máy này: <b id="kh-ma-may"></b> <button id="nut-chep-may" class="nho">Chép</button></div>
+      <div class="ghi">Mã DT là dùng thử 7 ngày, đủ tính năng. Mã VV là vĩnh viễn. Mỗi mã chỉ kích hoạt được trên một máy, một lần.</div>
+    </div>
+    <button id="nut-quay-lai" class="lien-ket" hidden>‹ Quay lại</button>
+  </section>
+
+  <!-- ===================================================== màn chính -->
+  <section id="man-chinh" hidden>
+    <div id="dai-dung-thu" class="dai-dung-thu" hidden></div>
+    <nav class="the">
+      <button data-the="soat" class="dang-chon">Soát</button>
+      <button data-the="dung">Dựng</button>
+      <button data-the="sua">Sửa nhanh</button>
+      <button data-the="khuon">Khuôn</button>
+      <button data-the="khoi">Khối</button>
+    </nav>
+
+    <div id="the-soat" class="noi-the">
+      <p class="ghi">Soát thể thức văn bản đang mở theo Phụ lục I Nghị định 30/2020/NĐ-CP. Bấm vào đoạn ví dụ để nhảy tới chỗ sai.</p>
+      <button id="nut-soat" class="chinh rong">Soát văn bản đang mở</button>
+      <div id="kq-soat"></div>
+    </div>
+
+    <div id="the-dung" class="noi-the" hidden>
+      <p class="ghi">Gõ hoặc dán phần nội dung vào văn bản (có thể kèm tên loại, trích yếu, dòng Kính gửi, người ký, nơi nhận). Add-in nhận ra các phần đó, thêm Quốc hiệu, Tiêu ngữ, số, ngày tháng theo hồ sơ cơ quan, dựng khối nơi nhận, chữ ký và chuẩn hóa định dạng ngay trên văn bản đang mở.</p>
+      <details id="ho-so">
+        <summary>Hồ sơ cơ quan (lưu một lần)</summary>
+        <label>Tên cơ quan chủ quản (nếu có)<input data-hs="chuQuan" placeholder="UBND TỈNH A"></label>
+        <label>Tên cơ quan ban hành<input data-hs="coQuan" placeholder="SỞ NỘI VỤ"></label>
+        <label>Chữ viết tắt tên cơ quan trong số ký hiệu<input data-hs="kyHieu" placeholder="SNV"></label>
+        <label>Chữ viết tắt đơn vị soạn thảo (công văn)<input data-hs="kyHieuDonVi" placeholder="VP"></label>
+        <label>Địa danh<input data-hs="diaDanh" placeholder="Hà Nội"></label>
+        <label>Thẩm quyền ký thường dùng (nếu ký thay)<input data-hs="thamQuyen" placeholder="KT. GIÁM ĐỐC"></label>
+        <label>Chức vụ người ký<input data-hs="chucVu" placeholder="PHÓ GIÁM ĐỐC"></label>
+        <label>Họ và tên người ký<input data-hs="hoTen" placeholder="Nguyễn Văn A"></label>
+        <label>Nơi nhận mặc định (mỗi nơi một dòng)<textarea data-hs="noiNhan" rows="2">Lưu: VT</textarea></label>
+        <button id="nut-luu-ho-so" class="rong">Lưu hồ sơ</button>
+      </details>
+      <button id="nut-doc-vb" class="chinh rong">Đọc văn bản đang mở</button>
+      <div id="form-dung" hidden>
+        <div id="dung-tom" class="thong-bao"></div>
+        <label>Loại văn bản<select data-d="loai"><option value="CV">Công văn</option><option value="BC">Báo cáo</option><option value="TTr">Tờ trình</option><option value="KH">Kế hoạch</option><option value="TB">Thông báo</option><option value="QĐ">Quyết định</option><option value="NQ">Nghị quyết</option><option value="CTr">Chương trình</option><option value="HD">Hướng dẫn</option><option value="ĐA">Đề án</option><option value="PA">Phương án</option><option value="QC">Quy chế</option><option value="GM">Giấy mời</option><option value="BB">Biên bản</option></select></label>
+        <label id="d-trich">Trích yếu<input data-d="trichYeu"></label>
+        <label id="d-vv">V/v (trích yếu công văn)<input data-d="veViec"></label>
+        <label id="d-tqbh" hidden>Thẩm quyền ban hành (dòng in hoa trên khối căn cứ)<input data-d="thamQuyenBH" placeholder="GIÁM ĐỐC SỞ NỘI VỤ"></label>
+        <label>Kính gửi (mỗi nơi một dòng; để trống nếu không có)<textarea data-d="kinhGui" rows="2"></textarea></label>
+        <label>Nơi nhận (mỗi nơi một dòng)<textarea data-d="noiNhan" rows="3"></textarea></label>
+        <label>Thẩm quyền ký<input data-d="thamQuyen"></label>
+        <label>Chức vụ người ký<input data-d="chucVu"></label>
+        <label>Họ và tên người ký<input data-d="hoTen"></label>
+        <p class="ghi">Số và ngày ký để trống cho văn thư ghi khi ban hành. Bấm Ctrl + Z nếu muốn trả lại văn bản như trước.</p>
+        <button id="nut-dung" class="chinh rong">Dựng vào văn bản đang mở</button>
+      </div>
+      <div id="kq-dung"></div>
+    </div>
+
+    <div id="the-sua" class="noi-the" hidden>
+      <p class="ghi">Add-in sửa trên một <b>bản sao</b> và mở bản sao đó trong cửa sổ Word mới. Văn bản gốc giữ nguyên.</p>
+      <div class="chon">
+        <label><input type="checkbox" data-tc="phong" checked> Phông Times New Roman cho toàn văn bản</label>
+        <label><input type="checkbox" data-tc="mau" checked> Chữ màu đen</label>
+        <label><input type="checkbox" data-tc="co" checked> Cỡ chữ nội dung 14 (giữ nguyên chỗ đang 13)</label>
+        <label><input type="checkbox" data-tc="canh" checked> Canh đều hai lề, lùi đầu dòng 1 cm</label>
+        <label><input type="checkbox" data-tc="dong" checked> Giãn dòng đơn, cách đoạn 6pt</label>
+        <label><input type="checkbox" data-tc="trang" checked> Khổ A4, lề trên 2, dưới 2, trái 3, phải 2 cm</label>
+      </div>
+      <p class="ghi">Không đụng tới bảng, tên loại, trích yếu, khối chữ ký (các đoạn canh giữa, canh phải).</p>
+      <button id="nut-sua" class="chinh rong">Tạo bản đã sửa</button>
+      <div id="kq-sua"></div>
+    </div>
+
+    <div id="the-khuon" class="noi-the" hidden>
+      <p class="ghi">Tạo văn bản mới đã đúng thể thức: khổ A4, lề, phông, số trang ở lề trên và bộ kiểu (style) NĐ30.</p>
+      <div id="ds-khuon"></div>
+      <div id="kq-khuon"></div>
+    </div>
+
+    <div id="the-khoi" class="noi-the" hidden>
+      <details open>
+        <summary>Khối đầu văn bản</summary>
+        <label>Tên cơ quan chủ quản (nếu có)<input data-k="chuQuan" placeholder="UBND TỈNH A"></label>
+        <label>Tên cơ quan ban hành<input data-k="coQuan" placeholder="SỞ NỘI VỤ"></label>
+        <label>Loại văn bản
+          <select data-k="loai">
+            <option value="CV">Công văn</option><option value="BC">Báo cáo</option><option value="TTr">Tờ trình</option>
+            <option value="KH">Kế hoạch</option><option value="TB">Thông báo</option><option value="QĐ">Quyết định</option><option value="NQ">Nghị quyết</option>
+          </select>
+        </label>
+        <label>Số, ký hiệu<input data-k="soKyHieu" placeholder="     /UBND-VP"></label>
+        <label id="dong-vv">V/v (trích yếu công văn)<input data-k="veViec" placeholder="tăng cường ..."></label>
+        <label id="dong-trich-yeu" hidden>Trích yếu<input data-k="trichYeu" placeholder="Kết quả công tác quý IV năm 2026"></label>
+        <label>Địa danh<input data-k="diaDanh" placeholder="Hà Nội"></label>
+        <label>Ngày ban hành<input type="date" data-k="ngay"></label>
+        <label class="ngang"><input type="checkbox" data-k="deTrongNgay"> Để trống ngày, tháng (chờ ký)</label>
+        <div class="vi-tri">Chèn vào:
+          <label class="ngang"><input type="radio" name="vt-dau" value="dau" checked> đầu văn bản</label>
+          <label class="ngang"><input type="radio" name="vt-dau" value="con-tro"> chỗ con trỏ</label>
+        </div>
+        <button id="nut-khoi-dau" class="chinh rong">Chèn khối đầu văn bản</button>
+      </details>
+      <details>
+        <summary>Khối nơi nhận, chữ ký</summary>
+        <label>Nơi nhận (mỗi nơi một dòng, dòng Lưu để cuối)<textarea data-k="noiNhan" rows="4">Như trên
+Lưu: VT</textarea></label>
+        <label>Thẩm quyền ký (nếu ký thay, thừa lệnh...)<input data-k="thamQuyen" placeholder="KT. GIÁM ĐỐC"></label>
+        <label>Chức vụ người ký<input data-k="chucVu" placeholder="PHÓ GIÁM ĐỐC"></label>
+        <label>Họ và tên<input data-k="hoTen" placeholder="Nguyễn Văn A"></label>
+        <div class="vi-tri">Chèn vào:
+          <label class="ngang"><input type="radio" name="vt-ky" value="con-tro" checked> chỗ con trỏ</label>
+          <label class="ngang"><input type="radio" name="vt-ky" value="cuoi"> cuối văn bản</label>
+        </div>
+        <button id="nut-khoi-ky" class="chinh rong">Chèn khối nơi nhận, chữ ký</button>
+      </details>
+      <div id="kq-khoi"></div>
+    </div>
+
+    <footer class="chan">
+      <details>
+        <summary id="tom-giay-phep">Giấy phép</summary>
+        <div id="ct-giay-phep" class="ghi"></div>
+        <div class="hang-nut">
+          <button id="nut-doi-ma" class="nho">Nhập mã khác</button>
+          <button id="nut-kiem-cap-nhat" class="nho">Kiểm tra bản mới</button>
+        </div>
+        <div id="ds-ban-cu" class="ghi"></div>
+      </details>
+    </footer>
+  </section>
+</body>
+</html>
