@@ -1,11 +1,21 @@
 {
-  "moi_nhat": "1.1.1",
-  "ngay": "2026-11-25",
+  "moi_nhat": "1.1.2",
+  "ngay": "2026-11-26",
   "noi_dung": [
-    "Thẻ Dựng và thẻ Khối: từ Quốc hiệu, Tiêu ngữ tới Kính gửi và khối ký không còn bị lùi đầu dòng, kể cả khi kiểu Normal của văn bản đang lùi đầu dòng.",
-    "Đoạn nội dung sau khi dựng lùi đúng 1 cm."
+    "Thẻ Dựng chuẩn hóa cả phụ lục sau khối chữ ký: mỗi phụ lục sang trang mới, số trang đánh lại từ 1; từ hai phụ lục trở lên đánh số La Mã.",
+    "Dòng \"Phụ lục\" in thường cỡ 14 đậm, tên phụ lục in hoa cỡ 14 đậm, dòng \"(Kèm theo …)\" cỡ 14 nghiêng, đều canh giữa; thiếu dòng Kèm theo thì add-in thêm, để trống số, ngày chờ văn thư.",
+    "Nhận ra phụ lục ghi chữ thường (\"Phụ lục I\") chứ không chỉ \"PHỤ LỤC\"."
   ],
   "cac_ban": [
+    {
+      "phien_ban": "1.1.2",
+      "ngay": "2026-11-26",
+      "noi_dung": [
+        "Thẻ Dựng chuẩn hóa cả phụ lục sau khối chữ ký: mỗi phụ lục sang trang mới, số trang đánh lại từ 1; từ hai phụ lục trở lên đánh số La Mã.",
+        "Dòng \"Phụ lục\" in thường cỡ 14 đậm, tên phụ lục in hoa cỡ 14 đậm, dòng \"(Kèm theo …)\" cỡ 14 nghiêng, đều canh giữa; thiếu dòng Kèm theo thì add-in thêm, để trống số, ngày chờ văn thư.",
+        "Nhận ra phụ lục ghi chữ thường (\"Phụ lục I\") chứ không chỉ \"PHỤ LỤC\"."
+      ]
+    },
     {
       "phien_ban": "1.1.1",
       "ngay": "2026-11-25",
